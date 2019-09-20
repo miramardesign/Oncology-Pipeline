@@ -5,7 +5,10 @@ export const ZincCode = 'US/ONC/0219/0018(1)';
 export const NavPageData: INavPage = {
   title: `Merck KGaA, Darmstadt, Germany oncology pipeline portfolio`,
   subtitle: `Three key mechanistic areas`,
-  footer: `Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at <u>www.clinicaltrials.gov</u>.`,
+  footer: `Pipeline compounds are being investigated for the treatment of various diseases.
+  Efficacy and safety of these compounds are still under investigation in various indications. 
+  Regulatory approval is dependent on the completion of the study programs and review by local regulatory authorities,
+   and varies from country to country. Clinical trial information is available at <u>www.clinicaltrials.gov</u>.`,
 };
 export const images = [
   'assets/indicators/purple-phase-one-icon.png',
@@ -16,20 +19,20 @@ export const welComeImages = [
   'assets/home-page-elements/immuno-onc-bg.png',
   'assets/home-page-elements/immuno-onc-bg.png',
   'assets/home-page-elements/immuno-onc-bg.png'
-]
+];
 export const WelcomePageData: any[] = [
   {
     mainTitle: `Immuno-<br>Oncology`,
     sections: [
-    { title: 'Bintrafusp alfa (M7824)', subTitle: 'TGF-β trap/anti-PD-L1',phase: 2,path: 'bintrafusp'},
+    { title: 'Bintrafusp alfa (M7824)', subTitle: 'TGF-β trap/anti-PD-L1', phase: 2, path: 'bintrafusp'},
     { title: 'Abituzumab', subTitle: 'pan-αv integrin inhibiting mAb', phase: 2, path: 'Abituzumab' },
-    { title: 'M9241 (NHS-IL12)', subTitle: 'Cancer immunotherapy', phase: 1, path: 'M9241' },
+    { title: 'M9241 (NHS-IL12)', subTitle: 'Cancer immunotherapy', phase: 1, path: 'M9241' }
     ],
-    btnImg:'assets/home-page-elemets/immuno-onc-bg.png',
+    btnImg: 'assets/home-page-elemets/immuno-onc-bg.png',
     video: 'assets/videos/tgfb-trap.mp4',
     color: `navyblue`,
     arrowImage: 'assets/buttons/home-immuno-onc-btn.png',
-    Index:0
+    Index: 0
   },
   {
     mainTitle: 'DNA DAMAGE RESPONSE (DDR)',
@@ -43,7 +46,7 @@ export const WelcomePageData: any[] = [
     video: 'assets/videos/dna-damage-response-pathway.mp4',
     color: `yellow`,
     arrowImage: 'assets/buttons/home-ddr-btn.png',
-    Index:1
+    Index: 1
   },
   {
     mainTitle: 'ONCOGENIC <br>PATHWAYS',

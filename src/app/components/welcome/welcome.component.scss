@@ -4,13 +4,24 @@
   width: 100%;
 }
 
+.test-bg{
+  background-image: url(../../../assets/home-page-elements/immuno-onc-bg.png);
+}
+
+.card-body ul.list-group li.list-group-item{
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  &:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
 header {
   margin-bottom: 4rem;
   text-align: center;
 
   h1 {
     font-size: 2.813rem;
-    margin-bottom: 0;
+    margin-bottom: 0; 
   }
 
   p {
