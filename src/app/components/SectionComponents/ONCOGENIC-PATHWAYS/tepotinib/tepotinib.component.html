@@ -9,7 +9,8 @@
                         <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS</h2>
                     </div>
                     <div class="positionhome pl-2">
-                        <a href="#"> <img src="assets/buttons/home-btn.png" alt="image not found" height="50" width="50"></a>
+                        <a href="#"> <img src="assets/buttons/home-btn.png" 
+                            alt="image not found" height="50" width="50"></a>
                     </div>
                 </div>
             </div>
@@ -45,11 +46,19 @@
 
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <video controls class="shadow-lg" [src]="videoLink" (ended)="videoEnded()" width="100%" ></video>
+                        <!--  controls -->
+                        <!-- <video   class="shadow-lg" [src]="videoLink"
+                         onclick="this.play()"  ></video> -->
+
+                         <video  (click)="toggleVideo($event)" #videoPlayer  [src]="videoLink" width="100%">
+                        </video>
+
+
                     </div>
 
 
 
+ 
                     <div class="col-12">
                         <div class="d-flex justify-content-center mt-4">
                             <!-- Pagination -->
@@ -290,7 +299,8 @@
             <div class="col-12">
                 <div class="d-flex justify-content-between">
                     <div class="p-2 f-10 text-dark">
-                            Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                            Updated: August 5, 2019 <br />
+                            Pipeli666ne compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
 
                         <br><br>*Treatment-naive patients receiving first-line therapy or pretreated patients receiving no more than 2 lines of prior therapy.
                     </div>

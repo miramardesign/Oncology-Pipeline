@@ -51,7 +51,7 @@ export const WelcomePageData: any[] = [
   {
     mainTitle: 'ONCOGENIC <br>PATHWAYS',
     sections: [
-      { title: 'Tepotinib',subTitle: 'MET kinase inhibitor',phase: 2,path: 'Tepotinib'},
+      { title: 'Tepotinib',subTitle: 'MET kinase inhibitor', phase: 2, path: 'Tepotinib'},
       { title: 'M2698', subTitle: 'p70S6K and Akt inhibitor', phase: 1, path: 'M2698' },
       { title: 'M8891', subTitle: 'MetAP2 inhibitor', phase: 1, path: 'M8891' },
       { title: 'M7583', subTitle: 'BTK inhibitor', phase: 1, path: 'M7583' },
@@ -60,9 +60,12 @@ export const WelcomePageData: any[] = [
     video: 'assets/videos/met-pathway-alterations.mp4',
     color: `skyblue`,
     arrowImage: '/assets/buttons/home-onco-pathway-btn.png',
-    Index:2
+    Index: 2
   },
 ];
 
-export const getVideoUrl = (): string => (WelcomePageData.find(sec => (sec.sections).find(ele => ele.path == window.location.pathname.split('').reduce((prev, next) => { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).video;
+export const getVideoUrl = (): string =>
+ (WelcomePageData.find(sec =>
+  (sec.sections).find(ele => ele.path == window.location.pathname.split('').reduce((prev, next) =>
+   { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).video;
 export const getButtonImageColor = (): string => (WelcomePageData.find(sec => (sec.sections).find(ele => ele.path == window.location.pathname.split('').reduce((prev, next) => { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).color;

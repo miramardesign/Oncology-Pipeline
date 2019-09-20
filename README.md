@@ -1,3 +1,6 @@
+# deploy 
+ng build --prod --base-href "https://miramardesign.github.io/Oncology-Pipeline/"  && ngh 
+
 # SeronoPipeline
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
