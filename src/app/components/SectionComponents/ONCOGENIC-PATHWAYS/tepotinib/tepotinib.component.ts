@@ -21,6 +21,7 @@ export class TepotinibComponent implements OnInit {
 
   generateArray = WelcomeComponent.prototype.generateArray;
 
+  isVisiblePlayPause = true;
   videoPlayer: HTMLVideoElement;
 
   @ViewChild('videoPlayer')
@@ -29,14 +30,15 @@ export class TepotinibComponent implements OnInit {
   }
 
   toggleVideo(event: any) {
-
-    console.log('video event', event);
-    const paused = event.target.paused;
+    const paused = this.videoPlayer.paused;
 
     if (paused) {
       this.videoPlayer.play();
+      this.isVisiblePlayPause = false;
     } else {
       this.videoPlayer.pause();
+      this.isVisiblePlayPause = true;
+
     }
   }
 
