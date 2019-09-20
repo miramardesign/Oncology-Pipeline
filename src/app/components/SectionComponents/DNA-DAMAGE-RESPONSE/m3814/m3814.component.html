@@ -1,0 +1,674 @@
+<div class="container-fluid background_merckDetail">
+    <div class="row justify-content-between p-5 ml-1">
+        <div>
+            <h1 class="merckFont colouroncology">Merck</h1>
+        </div>
+        <div class="d-flex">
+            <div class="positionhead pt-2 pr-2 border_home">
+                <h2 class="merckFont colourddr">DNA DAMAGE RESPONSE (DDR)</h2>
+            </div>
+            <div class="positionhome pl-2">
+                <a href="#"> <img src="assets/buttons/home-btn.png" alt="image not found" height="50" width="50"></a>
+            </div>
+        </div>
+    </div>
+    <ng-container [ngSwitch]="navigationHolder.currentSection">
+        <ng-container *ngSwitchCase="0">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b>(VX-970), <b>M4344</b>(VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <ul>
+                            <li>These molecules are currently under clinical investigation and have not been proven to
+                                be safe and effective.</li>
+                            <li>DDRi portfolio targets 3 major pathways of DSBs: ATR, ATM, DNA-PK</li>
+                        </ul>
+                        <div class="table-responsive pl-4">
+                            <table class="table table-striped">
+                                <thead class="btn-ddr text-white">
+                                    <tr>
+                                        <th>Agent</th>
+                                        <th>Proposed MOA</th>
+                                        <th>Route of Administration </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white">
+                                        <td><b>M6620</b> (VX-970)</td>
+                                        <td>ATR inhibitor</td>
+                                        <td>Intravenous <sup>1-3</sup></td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td><b>M4344</b> (VX-803)</td>
+                                        <td>ATR inhibitor</td>
+                                        <td>Oral4</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td><b>M3541</b></td>
+                                        <td>ATR inhibitor</td>
+                                        <td>Oral5</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td><b>M3814</b></td>
+                                        <td>DNA-PK inhibitor
+                                        </td>
+                                        <td>Oral 6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <video controls class="shadow-lg" [src]="videoLink" (ended)="videoEnded()" width="100%"></video>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                        Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and
+                        safety of these compounds are still under investigation in various indications. Regulatory
+                        approval is dependent on the completion of <br>the study programs and review by local regulatory
+                        authorities, and varies from country to country. Clinical trial information is available at
+                        www.clinicaltrials.gov.
+                        <br><br>MOA = Mechanism of Action<br> *M6620 (VX-970),
+                        M4344 (VX-803), M3541, and M3814 are under clinical investigation and have not been proven to be
+                        safe and effective. There is no guarantee any product will be approved in the sought-after
+                        indications. The relevance of<br> these preclinical findings on the efficacy and safety in the
+                        clinical setting has not been established.
+                        <br> 1. Shapiro G, et al. Cancer Res 2016;76(14 Suppl):Abstract CT012 and oral presentation
+                        (AACR 2016). 2. Plummer E, et al. J Clin Oncol 2016;34(Suppl):Abstract 2513 and poster (ASCO
+                        2016).<br> 3. O’Carrigan B, et al. J Clin
+                        Oncol 2016;34(Suppl):Abstract 2504 and oral presentation (ASCO 2016). 4. Vertex. Press Release,
+                        11 January 2017 (Accessed 1 January 2019). 5. ClinicalTrials.gov NCT03225105 (Accessed 18 June
+                        2019). 6.<br> van Bussel M, et al. J Clin
+                        Oncol 2017;35(Suppl):Abstract 2556 and poster (ASCO 2017).
+                    </div>
+                    <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016
+                        September 2019</div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b>(VX-970), <b>M4344</b>(VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> Genomic instability: a hallmark of late-stage
+                            cancers<sup>1,2</sup> –
+                            <br> rationale for DDR inhibition</p>
+                        <p class="f-14">Key enzymes involved in the repair of DNA damage<sup>3</sup>:</p>
+                        <div class="d-flex">
+                            <ul>
+                                <li class="font-weight-bold">ATM</li>
+                                <li class="font-weight-bold">ATR</li>
+                                <li class="font-weight-bold">DNA-PK</li>
+
+                            </ul>
+                            <div class="pl-5">
+                                <img src="assets/content/DDRI/ddri-atm-atr-dna-graphic.png" width="400px">
+                            </div>
+                        </div>
+                        <p class="f-14">DNA-PK is thought to be induced by exposure to cancer therapeutics.<br> As an
+                            effector
+                            kinase, DNA-PK is the integral component of the NHEJ process for DNA DSB repair</p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="f-14">ATR and ATM signal DNA repair by homologous recombination<sup>4</sup></p>
+                        <ul>
+                            <li> ATR is thought to be activated in response to DNA damage, such as double-strand breaks
+                                and replication stress<sup>5</sup></li>
+
+                            <li>ATM is thought to be activated by a single-stranded DNA-containing structure<sup>5</sup>
+                            </li>
+                        </ul>
+                        <p class="f-14"> In cancer, loss of ATM-p53 signaling is common and leads to dependence of tumor
+                            cells on ATR
+                            to survive DNA damage<sup>6,7</sup></p>
+
+
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/content/DDRI/ddri-survival-graphic.png" width="400px">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="row pl-4 pt-3">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between">
+                        <div class="p-2 f-10 text-dark">
+                            Pipeline compounds are being investigated for the treatment of various diseases. Efficacy
+                            and safety of these compounds are still under investigation in various indications.
+                            Regulatory approval is dependent on the completion of <br>the study programs and review by
+                            local regulatory authorities, and varies from country to country. Clinical trial information
+                            is available at www.clinicaltrials.gov.
+                            <br><br>
+                            1. O’Connor MJ. Mol Cell 2015;60:547-60. 2. Moeller
+                            BJ, et al. Curr Drug Targets 2010;11:1336-40. 3. Andrs M, et al. J Med Chem 2015;58:41−71.
+                            4.
+                            Smith J, et al. Adv Cancer Res 2010;108:73-112. 5. Cimprich KA, Cortez<br> D. Nat Rev
+                            Mol Cell Biol 2008;9:616-27. 6. Freed-Pastor WA, Prives C. Genes Dev 2012;26:1268-86. 7.
+                            Hall
+                            AB, et al. Oncotarget 2014;5:5674-85.</div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b> (VX-970), <b>M4344</b> (VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> DDRi M6620 (VX-970) clinical trial program overview (1/3)</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-ddr text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>M6620 Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Expansion cohort in TNBC, NSCLC, SCLC</td>
+                                        <td>Various</td>
+                                        <td>Phase I</td>
+                                        <td>+ various chemotherapies</td>
+                                        <td>NCT02157792</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Dose escalation</td>
+                                        <td>Any</td>
+                                        <td>Phase I/II</td>
+                                        <td>+/- carboplatin</td>
+                                        <td>2013-005100-34
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td>Rollover study for 2013-005100-34 </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>+/- carboplatin/paclitaxel</td>
+                                        <td>NCT03309150
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Dose escalation (NCI-sponsored) </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>+ irinotecan</td>
+                                        <td>NCT02595931
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Dose escalation (NCI-sponsored) </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>+ cisplatin/veliparib </td>
+                                        <td>NCT02723864
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">HPV-negative SCCHN</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Dose escalation (NCI-sponsored) </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>+ cisplatin/radiotherapy</td>
+                                        <td>NCT02567422</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">NSCLC with brain metastases
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Dose escalation (NCI-sponsored)</td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>+ WBRT</td>
+                                        <td>NCT02589522</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="d-flex justify-content-end">
+                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                        various diseases. Efficacy and safety of these compounds are still under investigation in
+                        various indications. Regulatory approval is dependent on the completion of <br>the study
+                        programs and review by local regulatory authorities, and varies from country to country.
+                        Clinical trial information is available at www.clinicaltrials.gov.
+                    </div>
+                    <div class="p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngSwitchCase="3">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b> (VX-970), <b>M4344</b> (VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+
+                        <p class="font-weight-bold f-16"> DDRi M6620 (VX-970) clinical trial program overview (2/3)</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-ddr text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>M6620 Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Ovarian carcinoma</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Platinum-resistant (NCI-sponsored)</td>
+                                        <td>2L+</td>
+                                        <td>Phase II</td>
+                                        <td>+ gemcitabine</td>
+                                        <td>NCT02595892</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Platinum-sensitive (NCI-sponsored) </td>
+                                        <td>2L</td>
+                                        <td>Phase I/II</td>
+                                        <td>+ gemcitabine/carboplatin</td>
+                                        <td>NCT02627443</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>Recurrent, PARPi resistant </td>
+                                        <td>2L+ </td>
+                                        <td>Phase II</td>
+                                        <td>+ avelumab/carboplatin </td>
+                                        <td>NCT03704467</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Urothelial carcinoma</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>UC (NCI-sponsored) </td>
+                                        <td>1L</td>
+                                        <td>Phase II</td>
+                                        <td>+ gemcitabine/cisplatin</td>
+                                        <td>NCT02567409</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Small-cell cancers</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td>SCLC, NSCLC, OC, cervical cancer, NET<br> (NCI-sponsored) </td>
+                                        <td>2L+</td>
+                                        <td>Phase I/II</td>
+                                        <td>+ topotecan </td>
+                                        <td>NCT02487095
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Prostate cancer</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td>Metastatic castration-resistant prostate<br> cancer (NCI Sponsored) </td>
+                                        <td>2L+</td>
+                                        <td>Phase II</td>
+                                        <td>+carboplatin/docetaxel</td>
+                                        <td>NCT03517969
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="d-flex justify-content-end">
+                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                        various diseases. Efficacy and safety of these compounds are still under investigation in
+                        various indications. Regulatory approval is dependent on the completion of <br>the study
+                        programs and review by local regulatory authorities, and varies from country to country.
+                        Clinical trial information is available at www.clinicaltrials.gov.
+                    </div>
+                    <div class="p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+
+        </ng-container>
+        <ng-container *ngSwitchCase="4">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b> (VX-970), <b>M4344</b> (VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> DDRi M6620 (VX-970) clinical trial program overview (3/3)</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-ddr text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>M6620 Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Gastric/GEJ adenocarcinoma
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td><i>TP53</i> mutant cancer (NCI-sponsored)</td>
+                                        <td>2L+</td>
+                                        <td>Phase II</td>
+                                        <td>+ irinotecan </td>
+                                        <td>NCT03641313</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Esophageal cancer and solid
+                                            tumors</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td>Dose escalation </td>
+                                        <td>Any </td>
+                                        <td>Phase I</td>
+                                        <td>+ radiotherapy, cisplatin/ <br> capecitabine, or CRT</td>
+                                        <td>NCT03641547</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Various cancers</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td>Leiomyosarcoma, osteosarcoma, or solid<br> tumors with specified mutations
+                                        </td>
+                                        <td>Various</td>
+                                        <td>Phase II</td>
+                                        <td>Monotherapy </td>
+                                        <td>NCT03718091
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="row pt-5 pl-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                        various diseases. Efficacy and safety of these compounds are still under investigation in
+                        various indications. Regulatory approval is dependent on the completion of <br>the study
+                        programs and review by local regulatory authorities, and varies from country to country.
+                        Clinical trial information is available at www.clinicaltrials.gov.
+                    </div>
+                    <div class=" p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="5">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="colourddr mb-5"><b>DDRi portfolio potential mechanisms:</b>
+                            <br> (<b>M6620</b> (VX-970), <b>M4344</b> (VX-803), <b>M3541</b>, <b>M3814</b>)*</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> DDRi M4344 (VX-803), M3541, M3814 Clinical trial program
+                            overview</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-ddr text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-light">
+                                        <td></td>
+                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td><b>M4344</b>, ATRi, dose escalation</td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>M4344 +/− gemcitabine or cisplatin or carboplatin </td>
+                                        <td>NCT02278250</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td><b>M3541</b>, ATMi, dose escalation (tumors <br> in thorax, abdomen, head
+                                            and neck,<br> extremities)
+                                        </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td> M3541 + radiotherapy</td>
+                                        <td>NCT03225105
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                                height="25"></td>
+                                        <td><b>M3814</b>, DNA-PKi, dose escalation<br> (expansion cohort in CLL) </td>
+                                        <td>Any/3L+ </td>
+                                        <td>Phase I</td>
+                                        <td>M3814</td>
+                                        <td>NCT02316197
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td><b>M3814</b>, DNA-PKi, dose escalation<br> (expansion cohorts in NSCLC and
+                                            SCCHN)</td>
+                                        <td>Any/1L+</td>
+                                        <td>Phase I</td>
+                                        <td>M3814 + radiotherapy/cisplatin </td>
+                                        <td>NCT02516813
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25" height="25">
+                                        </td>
+                                        <td><b>M3814</b>, DNA-PKi, dose escalation</td>
+                                        <td>2L+ </td>
+                                        <td>Phase I</td>
+                                        <td> M3814 + avelumab +/− radiotherapy </td>
+                                        <td>NCT03724890</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                        Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and
+                        safety of these compounds are still under investigation in various indications. Regulatory
+                        approval is dependent on the completion of <br>the study programs and review by local regulatory
+                        authorities, and varies from country to country. Clinical trial information is available at
+                        www.clinicaltrials.gov.
+                        <br><br> M3814 in SCLC (NCT03116971) was terminated because of low recruitment rate of patients
+                        and due
+                        to a change in focus of the study<br> 
+                    </div>
+                    <div class="p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>

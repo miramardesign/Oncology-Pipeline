@@ -1,0 +1,127 @@
+<div class="container-fluid background_merckDetail">
+    <div class="row justify-content-between p-5 ml-1">
+            <div>
+                <h1 class="merckFont colouroncology">Merck</h1>
+            </div>
+            <div class="d-flex">
+                <div class="positionhead pt-2 pr-2 border_home">
+                    <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS</h2>
+                </div>
+                <div class="positionhome pl-2">
+                    <a href="#"> <img src="assets/buttons/home-btn.png" alt="image not found" height="50" width="50"></a>
+                </div>
+            </div>
+        </div>
+    <ng-container [ngSwitch]="navigationHolder.currentSection">
+        <ng-container *ngSwitchCase="0">
+            <div class="main-content">
+                <div class="row row justify-content-between">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="coloronco mb-5"><b>M2698*</b>
+                            <br> (p70S6K and Akt inhibitor)</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 pt-5 pr-3">
+                        <p class="font-weight-bold f-16 pl-4"> Proposed profile</p>
+                        <ul>
+                            <li>M2698* is designed to be a brain penetrant, orally bioavailable, ATP-competitive dual <br>small-molecule proposed to be an inhibitor of p70S6K, Akt1, and Akt3 kinases<sup>1</sup>. This <br>molecule is currently under clinical investigation and
+                                has not been proven to be safe <br>and effective</li>
+                            <li>Although mTOR-inhibiting agents have shown clinical activity, effectiveness may <br>be limited due to activation of a compensatory Akt feedback loop, which leads to <br> increased PI3K/AKT/mTOR (PAM) pathway signaling<sup>2</sup></li>
+                            <li>Inhibition of several protein kinases along the PAM signaling pathway may potentially <br>overcome activation of this compensatory feedback loop<sup>1</sup></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-10 col-sm-10">
+                        <img src="assets/content/ONCO-PATHWAY/m2698-moa.png" width="450px">
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 pl-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                            Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                        <br><br>
+                        *M2698 (MSC2363318A) is under clinical investigation and has not been proven to be safe and effective. There is no guarantee M2698 will be approved in the sought-after indications. The relevance of these preclinical findings on the <br>efficacy and safety
+                        in the clinical setting has not been established.
+                        <br>1. Machl A, et al. Am J Cancer Res 2016;6:806-18. 2. O’Reilly KE, et al. Cancer Res 2006;66:1500-8.
+                    </div>
+                    <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="coloronco mb-5"><b>M2698*</b>
+                            <br> (p70S6K and Akt inhibitor)</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> Clinical trial program overview</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-oncology text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>M7583 Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-white">
+                                        <td></td>
+                                        <td class="font-weight-bold text-black" colspan="5">Solid tumors</td>
+                                    </tr>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"></td>
+                                        <td>Solid tumors + breast cancer expansion<br> cohorts*
+                                        </td>
+                                        <td>Any</td>
+                                        <td>Phase I</td>
+                                        <td>Cohort 1: monotherapy<br> Cohort 2: + trastuzumab<br> Cohort 3: + tamoxifen<br>
+                                        </td>
+                                        <td><a href='https://clinicaltrials.gov/ct2/show/NCT01971515'>NCT01971515</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="row pt-5 pl-4">
+            <div class="col-12 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                         Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                        <br><br>*This study is ongoing, but not recruiting participants.
+                        </div>
+                    <div class="p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </div>
+        </ng-container>
+    </ng-container>
+
+
+</div>

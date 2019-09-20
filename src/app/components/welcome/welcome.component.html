@@ -1,0 +1,56 @@
+<div class="container-fluid background_merck">
+    <div class="row justify-content-between p-5 ml-1 ">
+        <div clss="col-md-6 col-sm-12">
+            <h1 class="merckFont colouroncology">Merck</h1>
+            </div>
+            <div clss="col-md-6 col-sm-12">
+        <h2 class="merckFont colouroncology">ONCOLOGY PIPELINE</h2>
+   </div>
+ </div>
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch" *ngFor="let item of welcomePanels">
+                <div class="card  w-100 border-0 card_shadowMerck cardborderradius mb-3">
+                    <div class="card-header" [ngClass]="{'immunologyHeader': item.Index=='0','dnaCardHeader':item.Index=='1','oncogencardheader':item.Index=='2'}">
+                        <h1 class="merckFont card-headerfont text-white" [innerHTML]="item.mainTitle"></h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between pr-2">
+                            <small class="f-12 text-dark">Assets</small>
+                            <small class="f-12 text-dark">View More</small>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" *ngFor="let section of item.sections">
+                                <div class="d-flex w-100 justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <h5 class="list-header">{{section.title}}</h5>
+                                        <p class="card-text">{{section.subTitle}}</p>
+                                    </div>
+                                    <div class="List-icon">
+                                        <a [routerLink]="section.path" routerLinkActive="router-link-active" class="pt-2 col-md-2"><img [src]="item.arrowImage" alt="image not found" width="50" height="50"></a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mt-3">
+                                    <p class="mr-3 mb-0 f-12">Development Phase</p>
+                                    <a *ngFor="let imageIndex of generateArray(section.phase)" style="cursor: default" href="#" class="card-link">
+                                        <img [src]="getImageFromIndex(imageIndex)" height="18"></a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+            <div class="d-flex justify-content-between">
+                <div class="p-2 f-10 text-dark">
+             Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                </div>
+                <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+            </div>
+        </div>
+        </div>
+</div>

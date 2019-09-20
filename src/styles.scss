@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'theme/variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'theme/swiper-theme';
+@import 'theme/swiper';
+@import 'theme/base';
+@import 'theme/home';
+@import 'theme/nav-screen';
+@import 'theme/trials';
+@import 'theme/legal';
+
+.body
+{
+    overflow: scroll
+}

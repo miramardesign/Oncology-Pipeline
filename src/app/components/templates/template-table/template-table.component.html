@@ -1,0 +1,18 @@
+<div class="template-text-left">
+  <div class="row">
+    <div class="col-12" [innerHTML]="slide?.topText"></div>
+    <div class="col-12" *ngIf="slide.image">
+      <img class="img-fluid mx-auto" [src]="slide.image">
+    </div>
+    <div class="col-12" *ngIf="tableData">
+      <table class="table trial-table">
+        <tr *ngFor="let row of tableData" [ngClass]="row.rowClass">
+          <td [colSpan]="cell.colSpan"  *ngFor="let cell of row.tableRow" [ngClass]="cell.cellClass" [innerHTML]="cell.text">
+
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-12" [innerHTML]="slide?.bottomText"></div>
+  </div>
+</div>

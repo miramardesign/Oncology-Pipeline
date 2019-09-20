@@ -1,0 +1,41 @@
+<app-home-icon></app-home-icon>
+<div *ngIf="slides" class="swiper-container" [swiper]="config">
+<div class="swiper-wrapper">
+  <div *ngFor="let slide of slides; let last = last" class="swiper-slide font-lg" [ngClass]="'slide-' + slide.id">
+      <img [src]="getCategoryIconPath(slide)" class="category-icon">
+      <div class="row">
+        <div class="col-11 mx-auto">
+          <h1 *ngIf="slide.title" [innerHTML]="slide.title"></h1>
+          <h1 *ngIf="slide.subtitle" [innerHTML]="slide.subtitle"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0 swiper-nav">
+        </div>
+        <div class="col-10 mx-auto slide-content p-0">
+          <div *ngIf="slide.templateTextLeft">
+            <app-template-text-left [slide]="slide.templateTextLeft"></app-template-text-left>
+          </div>
+          <div *ngIf="slide.templateTable">
+            <app-template-table [slide]="slide.templateTable"></app-template-table>
+          </div>
+          <div *ngIf="slide.templateImageTextColumns">
+            <app-template-image-text-columns [slide]="slide.templateImageTextColumns"></app-template-image-text-columns>
+          </div>
+        </div>
+        <div class="col p-0 d-flex align-items-end flex-column swiper-nav">
+        </div>
+      </div>
+
+
+
+      <app-footer [footerContent]="slide.footer" [tableLegend]="isFooterTableLegend(slide)" ></app-footer>
+    </div>
+</div>
+</div>
+<div class="swiper-button-prev trial-slider-nav">
+
+</div>
+<div class="swiper-button-next trial-slider-nav">
+  <img src="assets/images/nav-next.svg">
+</div>

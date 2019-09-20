@@ -1,0 +1,37 @@
+<style>
+.btn-maxaddot {
+    box-shadow: black 0px 0px 5px -2px;
+    border-radius: 40%;
+    padding: 8px;
+}
+.btn-oncology{
+    background-color: #16becf; 
+}
+.btn-immuno{
+    background-color: #522E91;
+}
+.btn-ddr{
+    background-color: #FFCB05;
+}
+</style>
+
+<div *ngIf="navigationPaneData" class="row justify-content-center">
+        <div class="d-flex">
+          <a href="javascript:void(0)"> <img src="{{backbuttonsrc}}" *ngIf="navigationPaneData.currentSection"
+              (click)="navigationPaneData.currentSection=navigationPaneData.currentSection-1" height="30" width="100"></a>
+          <div class="d-flex pt-2 ml-5 mr-5">
+            <a *ngFor="let sectionIndex of generateArray(navigationPaneData.numberOfSections)" href="javascript:void(0)"
+              style="cursor : default" [ngClass]="{
+                'btn-oncology':color=='skyblue' && navigationPaneData.currentSection == sectionIndex,
+                'btn-immuno':color=='navyblue' && navigationPaneData.currentSection == sectionIndex,
+                'btn-ddr':color=='yellow' && navigationPaneData.currentSection == sectionIndex
+                 }"
+              class="btn  pad-btndot btn-maxaddot ml-4"></a>
+          </div>
+          <a href="javascript:void(0)" *ngIf="navigationPaneData.currentSection < navigationPaneData.numberOfSections-1"
+            (click)="navigationPaneData.currentSection=navigationPaneData.currentSection+1"> <img src="{{nextbuttonsrc}}" height="30"
+              width="100"></a>
+
+        </div>
+
+      </div>

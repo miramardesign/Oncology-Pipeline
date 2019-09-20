@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Merck_font;
+    src: url(MerckV2_Font/TrueType/Merck.ttf);
+}
+
+.background_merck {
+    background: url("backgrounds/bg-no-line.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh!important;
+}
+
+.card_shadowMerck {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)!important;
+}
+
+.merckFont {
+    font-family: Merck_font;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cardborderradius {
+    border-radius: 20px!important;
+}
+
+.f-10 {
+    font-size: 10px;
+}
+
+.f-12 {
+    font-size: 12px;
+}
+.f-14 {
+    font-size: 14px;
+}
+
+.li 
+{
+    font-size:14px;
+    padding-bottom: 10px;
+}
+.immunologyHeader {
+    background-color: #522E91!important;
+    border-radius: 20px 20px 0px 0px!important;
+}
+
+.merckDivider {
+    border-bottom: 2px solid lightgray
+}
+
+.dnaCardHeader {
+    background-color: #FFCB05!important;
+    border-radius: 20px 20px 0px 0px!important;
+}
+
+.oncogencardheader {
+    background-color: #16becf!important;
+    border-radius: 20px 20px 0px 0px!important;
+}
+
+.colouroncology {
+    color: #522E91;
+}
+
+.colourddr {
+    color: #FFCB05;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.Displaynone {
+    display: none;
+}
+
+.background_merckDetail {
+    background: url("../assets/backgrounds/bg-with-line.png");
+    background-repeat: no-repeat;
+    width: -webkit-fill-available;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+.coloronco {
+    color: #16BECF;
+}
+
+.btn-oncology {
+    background-color: #16becf;
+}
+
+.btn-immuno {
+    background-color: #522E91;
+}
+
+.btn-ddr {
+    background-color: #FFCB05;
+}
+
+.btn-maxaddot {
+    border-radius: 40%;
+    width: 8px;
+    height: 8px;
+}
+
+.pad-btndot {
+    padding: 6px;
+}
+
+.btn-inactivemerck {
+    color: #97e6ef;
+    border: 1px solid #97e6ef;
+}
+
+.card-header:first-child {
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;
+}
+
+.list-group-flush .list-group-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.list-group-flush .list-group-item:first-child {
+    border-top: 0;
+}
+
+.list-header {
+    font-weight: 600;
+    color:black;
+}
+
+.card-link+.card-link {
+    margin-left: 1rem !important;
+}
+
+.main-content {
+    padding: 1rem 4rem 0;
+}
+
+@media (max-width:768px) {
+    .main-content {
+        padding: 2vh 2vh 0;
+    }
+    .background_merck {
+        background-position: 1.5%;
+    }
+    .card-headerfont {
+        font-size: 1.9rem !important;
+    }
+}
+
+@media (max-width:576px) {
+    .main-content {
+        padding: 2vh 2vh 0;
+    }
+}
+.border_home{
+    border-right:4px solid rgb(38, 178, 221);
+}
+.table td, .table th {
+    padding: .35rem!important;
+    border:none!important;
+    
+}
+.table td{
+    font-size:14px!important;
+}
+.ImageColumn
+{
+    text-align: center;
+}
+.table td a, .table th a{
+text-decoration: none!important;
+color: grey!important;
+}
+ul li {
+    line-height: 35px;
+    font-size: 14px;
+}

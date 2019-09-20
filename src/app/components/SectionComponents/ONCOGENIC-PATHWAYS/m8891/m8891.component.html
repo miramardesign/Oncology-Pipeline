@@ -1,0 +1,119 @@
+<div class="container-fluid background_merckDetail">
+        <div class="row justify-content-between p-5 ml-1">
+                <div>
+                    <h1 class="merckFont colouroncology">Merck</h1>
+                </div>
+                <div class="d-flex">
+                    <div class="positionhead pt-2 pr-2 border_home">
+                        <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS</h2>
+                    </div>
+                    <div class="positionhome pl-2">
+                        <a href="#"> <img src="assets/buttons/home-btn.png" alt="image not found" height="50" width="50"></a>
+                    </div>
+                </div>
+            </div>
+    <ng-container [ngSwitch]="navigationHolder.currentSection">
+        <ng-container *ngSwitchCase="0">
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="coloronco mb-5"><b>M8891*</b>
+                            <br> (MetAP2 inhibitor)</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16 pl-4"> Proposed profile</p>
+                        <ul>
+                            <li>M8891* is an investigational, small-molecule designed as a reversible, orally <br>bioavailable inhibitor of Methionine aminopeptidase 2 (MetAP2). This molecule is <br>currently under clinical investigation and has not been proven to
+                                be safe and effective</li>
+                            <li>MetAP2 is an enzyme that is important for angiogenesis and proliferation in several<br> tumor types; it therefore serves as a relevant therapeutic target for anti-cancer <br>treatment development</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
+                        <img src="assets/content/ONCO-PATHWAY/m8891-moa.png" width="100%" height="100%">
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row pt-5 pl-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                        Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                        <br><br>*M8891 (MetAP2i) is under clinical investigation and has not been proven to be safe and effective. <br> There is no guarantee M8891 will be approved in the sought-after indications. The relevance of these preclinical findings on
+                        the efficacy and safety in the clinical setting has not been established.
+                        <br>Figure (ribosome) adapted from: http://biochemistrycourse.blogspot.com/2012/12/protein-synthesis.html
+                    </div>
+                    <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="1">
+            <!-- Section 2 -->
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="coloronco mb-5"><b>M8891*</b>
+                            <br> (MetAP2 inhibitor)</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <p class="font-weight-bold f-16"> Clinical trial program overview</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="btn-oncology text-white">
+                                    <tr>
+                                        <th class="ImageColumn">Enrolling</th>
+                                        <th>Clinical Trial</th>
+                                        <th>Line </th>
+                                        <th>Phase</th>
+                                        <th>M7583 Treatment</th>
+                                        <th>ClinicalTrials.gov Identifier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="bg-light">
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"></td>
+                                        <td>Solid tumors</td>
+                                        <td>≥2L</td>
+                                        <td>Phase I</td>
+                                        <td>Once or twice daily administration at<br> escalated dose levels for consecutive<br> 21-day cycles of continuous<br> treatment
+                                        </td>
+                                        <td>NCT03138538</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center mt-4">
+                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="row pt-5 pl-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 f-10 text-dark">
+                        Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
+                       <br><br>  *This study is ongoing, but not recruiting participants.
+                        </div>
+                    <div class="p-2 f-10 text-dark">GBPMLR/MULOP/0819/0016 September 2019</div>
+                </div>
+            </div>
+        </div>
+        </ng-container>
+    </ng-container>
+</div>

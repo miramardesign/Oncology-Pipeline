@@ -1,0 +1,57 @@
+.home-wrap {
+  padding-left: 75px;
+  .header-date {
+    padding-right: 175px;
+  }
+}
+.phase-header {
+  position: relative;
+  background: transparent url('assets/images/phase-header-bg.svg') no-repeat 0 0;
+}
+
+.study-list {
+  li {
+    padding-bottom: 4px;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  &.immuno-list,
+  &.onocology-list {
+    padding-left: 20px;
+    border-left: solid 5px #a5cd50;
+  }
+
+  &.immuno-list {
+    border-left-color: #ffc832;
+  }
+}
+
+.legend {
+  position: absolute;
+  top: 800px;
+  left: 200px;
+}
+
+.list-text {
+  color: black;
+  font-size: 1rem;
+  padding-left: 10px;
+  height: 20px;
+  border-left: solid 20px;
+}
+
+.immuno-legend {
+  border-left-color: #ffc832;
+}
+
+.oncology-legend {
+  border-left-color: #a5cd50;
+}
+
+#home-footer {
+  position: absolute;
+  top: -120px;
+}

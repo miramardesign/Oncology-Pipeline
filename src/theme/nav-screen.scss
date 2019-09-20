@@ -1,0 +1,72 @@
+.nav-screen {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  height: 1080px;
+  background: #fff url('assets/images/corner-bg-purple.png') no-repeat bottom left;
+  background-size: 196px 322px;
+}
+
+.nav-circle {
+  background: transparent url('assets/images/pipeline-circle.png') no-repeat center;
+  background-size: 95%;
+  height: 700px;
+
+  &,
+  .dashed-sublist li ul {
+    font-size: 1.7rem;
+  }
+
+  .section-nav-left {
+    padding-top: 210px;
+  }
+
+  .section-nav-right {
+    padding-top: 95px;
+
+    &.section-immuno {
+      padding-top: 265px;
+    }
+  }
+
+  .section-nav {
+    a {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.portfolio-footer {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  left: 0;
+  width: 1920px;
+  color: $primary;
+
+  & > div:first-child {
+    padding-left: 200px;
+    font-size: .8rem;
+  }
+
+  .site-link {
+    text-decoration: underline;
+  }
+
+  .logo img {
+    max-width: 100px;
+  }
+}
+
+.dashed-sublist {
+  li ul {
+    list-style: none;
+    font-size: 90%;
+
+    li:before {
+      content: '\2013';
+      position: absolute;
+      margin-left: -20px;
+    }
+  }
+}

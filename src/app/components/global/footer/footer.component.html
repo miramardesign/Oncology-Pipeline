@@ -1,0 +1,15 @@
+<div class="row footer pb-2">
+  <div [ngClass]="{'col-10': !tableLegend, 'col-8': tableLegend}" [innerHTML]="footerContent"></div>
+  <div *ngIf="tableLegend" class="col-2 reference text-right">
+    <div class="legend-closed">
+      <img src="assets/images/icon-trial-closed.png"> Study closed for enrollment
+    </div>
+    <div class="legend-open">
+      <img src="assets/images/icon-trial-open.png"> Study currently recruiting
+    </div>
+  </div>
+  <div class="col-2 logo text-right">
+    <img src="assets/images/merck-logo.png">
+    <p class="reference mt-2">{{ zincCodeNum }}</p>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+
+
+body {
+  position: relative;
+  &.home {
+    background: url('assets/images/corner-bg-green.png') no-repeat bottom left;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary;
+  font-weight: bold;
+}
+
+.reference {
+  font-size: 0.8rem;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 1920px;
+
+  & > div:first-child {
+    font-size: 0.8rem;
+    padding-left: 200px;
+  }
+
+  .site-link {
+    text-decoration: underline;
+  }
+
+  .logo img {
+    max-width: 250px;
+  }
+}
+
+.dashed-sublist {
+  li ul {
+    font-size: 90%;
+    list-style: none;
+
+    li:before {
+      content: '\2013';
+      margin-left: -20px;
+      position: absolute;
+    }
+  }
+}
+
+.list-spaced {
+  li {
+    padding-bottom: 1rem;
+
+    ul {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.font-sm {
+  font-size: 0.7rem;
+}
+
+.font-md {
+  font-size: 1.2rem;
+}
+
+.font-lg {
+  font-size: 1.5rem;
+}
+
+.modal {
+  top: 60px;
+}
+
+.modal-content {
+  border: 0;
+
+  .modal-header {
+    border-bottom: 1px solid $white;
+    padding: 0.6875rem 1rem;
+
+    .modal-title {
+      color: $white;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  video {
+    width: 100%;
+  }
+}

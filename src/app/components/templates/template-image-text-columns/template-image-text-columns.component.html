@@ -1,0 +1,31 @@
+<div class="template-image-text-columns">
+  <div class="row">
+    <div [ngClass]="{'col-6': isMultipleColumns, 'col-12': !isMultipleColumns}" >
+      <div *ngIf="col1.topText" [innerHTML]="col1.topText">
+      </div>
+      <img *ngIf="col1.topImage" [src]="col1.topImage" [ngClass]="col1.topImageClass" class="img-fluid">
+
+      <div *ngIf="col1.middleText" [innerHTML]="col1.middleText">
+      </div>
+      <img *ngIf="col1.middleImage" [src]="col1.middleImage" [ngClass]="col1.middleImageClass" class="img-fluid">
+
+      <div *ngIf="col1.bottomText" [innerHTML]="col1.bottomText">
+      </div>
+      <img *ngIf="col1.bottomImage" [src]="col1.bottomImage" [ngClass]="col1.bottomImageClass" class="img-fluid">
+    </div>
+
+    <div  *ngIf="col2" class="col-6">
+      <div *ngIf="col2.topText" [innerHTML]="col2.topText">
+      </div>
+      <img *ngIf="col2.topImage" [src]="col2.topImage" [ngClass]="col2.topImageClass" class="img-fluid">
+
+      <div *ngIf="col2.middleText" [innerHTML]="col2.middleText">
+      </div>
+      <img *ngIf="col2.middleImage" [src]="col2.middleImage" [ngClass]="col2.middleImageClass" class="img-fluid">
+
+      <div *ngIf="col2.bottomText" [innerHTML]="col2.bottomText">
+      </div>
+      <img *ngIf="col2.bottomImage" [src]="col2.bottomImage" [ngClass]="col2.bottomImageClass" class="img-fluid">
+    </div>
+  </div>
+</div>

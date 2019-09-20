@@ -1,0 +1,106 @@
+<app-home-icon></app-home-icon>
+<div class="home-wrap">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-right header-date">{{ date }}</h2>
+      <h1 class="mb-5">{{ title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 pr-0">
+      <h2 class="phase-header d-block text-white px-4 py-2 pl-5 font-weight-normal">{{ phase1.title }}</h2>
+      <div class="row">
+        <div class="col-5 pr-0">
+          <ul class="list-unstyled onocology-list study-list">
+            <ng-container *ngFor="let study of phase1.studies">
+              <li *ngIf="study.category == 'Oncology'">
+                <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+                <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+                <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+        <div class="col-7 px-0">
+          <ul class="list-unstyled immuno-list study-list">
+            <ng-container *ngFor="let study of phase1.studies">
+              <li *ngIf="study.category == 'Immuno-Oncology'">
+                <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+                <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+                <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+              </li>
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 pl-0">
+      <h2 class="phase-header d-block text-white px-4 py-2 pl-5 font-weight-normal">{{ phase2.title }}</h2>
+        <div class="row">
+          <div class="col-5 pr-0">
+            <ul class="list-unstyled onocology-list study-list">
+              <ng-container *ngFor="let study of phase2.studies">
+                <li *ngIf="study.category == 'Oncology'">
+                  <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+                  <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+                  <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+          <div class="col-7 px-0">
+            <ul class="list-unstyled immuno-list study-list">
+              <ng-container *ngFor="let study of phase2.studies">
+                <li *ngIf="study.category == 'Immuno-Oncology'">
+                  <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+                  <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+                  <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="col-3">
+      <h2 class="phase-header d-block text-white px-4 py-2 pl-5 font-weight-normal">{{ phase3.title }}</h2>
+      <ul class="list-unstyled onocology-list study-list">
+        <ng-container *ngFor="let study of phase3.studies">
+          <li *ngIf="study.category == 'Oncology'">
+            <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+            <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+            <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+          </li>
+        </ng-container>
+      </ul>
+      <ul class="list-unstyled immuno-list study-list">
+        <ng-container *ngFor="let study of phase3.studies">
+          <li *ngIf="study.category == 'Immuno-Oncology'">
+            <p class="font-weight-bold" *ngIf="study.title" [innerHTML]="trimWhiteSpace(study.title)"></p>
+            <p class="font-weight-bold" *ngIf="study.code" [innerHTML]="trimWhiteSpace(study.code)"></p>
+            <p class="reference" *ngIf="study.type" [innerHTML]="trimWhiteSpace(study.type)"></p>
+          </li>
+        </ng-container>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <h2 class="phase-header d-block text-white px-4 py-2 pl-5 font-weight-normal">{{ registration.title }}</h2>
+      <ul class="list-unstyled immuno-list study-list">
+        <li *ngIf="registration.category == 'Immuno-Oncology'">
+          <span class="font-weight-bold" [innerHTML]="registration.code"></span><br>
+          <span class="reference" [innerHTML]="registration.type"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1">
+      <a class="swiper-next swiper-home d-block" [routerLink]="['/legal']"></a>
+    </div>
+  </div>
+</div>
+<app-footer [footerContent]="footer"></app-footer>
+
+
+<div class="legend">
+  <p class="list-text oncology-legend">{{ legendItems.onc }}</p>
+  <p class="list-text immuno-legend">{{ legendItems.io }}</p>
+</div>

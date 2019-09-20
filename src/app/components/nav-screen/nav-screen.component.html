@@ -1,0 +1,50 @@
+<app-home-icon></app-home-icon>
+<div class="nav-screen">
+<div class="row">
+  <div class="col-12">
+    <h1 class="font-weight-normal mb-0">
+      {{  pageData.title }}
+    </h1>
+    <h1>{{ pageData.subtitle }}</h1>
+  </div>
+</div>
+
+<div class="row">
+ <div class="col-12 nav-circle">
+   <div class="row">
+      <div class="col-8">
+        <div class="section-nav section-nav-left section-dna pl-5">
+          <ul class="dashed-sublist" *ngFor="let list of dnaSection.sectionedLinks">
+            <li>
+              {{ list.subSectionTitle }}
+              <ul *ngIf="list.links.length > 0">
+                <li *ngFor="let link of list.links">
+                  <a [innerHTML] ="link.text" (click)="onNavLinkClick(link.slideGroup)"></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class=" section-nav section-nav-right section-pathway">
+          <ul>
+            <li *ngFor="let link of pathwaySection.links">
+              <a [innerHTML]="link.text" (click)="onNavLinkClick(link.slideGroup)"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-nav section-nav-right section-immuno">
+          <ul>
+            <li *ngFor="let link of immunoSection.links">
+              <a [innerHTML]="link.text" (click)="onNavLinkClick(link.slideGroup)"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+   </div>
+ </div>
+</div>
+<app-footer [footerContent]="disclaimer"></app-footer>
+</div>
