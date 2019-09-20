@@ -176,10 +176,23 @@
 .table td{
     font-size:14px!important;
 }
-.ImageColumn
+
+.ImageColumn,
+/** may need more specific identifier */ 
+table.table-striped > thead > tr th:nth-child(6),
+table.table-striped > thead > tr th:nth-child(5),
+table.table-striped > thead > tr th:nth-child(4),
+table.table-striped > thead > tr th:nth-child(3),
+table.table-striped > tbody > tr td:nth-child(6),
+table.table-striped > tbody > tr td:nth-child(5),
+table.table-striped > tbody > tr td:nth-child(4),
+table.table-striped > tbody > tr td:nth-child(3)
 {
-    text-align: center;
+     text-align: center;
 }
+
+
+
 .table td a, .table th a{
 text-decoration: none!important;
 color: grey!important;
@@ -188,3 +201,4 @@ ul li {
     line-height: 35px;
     font-size: 14px;
 }
+
