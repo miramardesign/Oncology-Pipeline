@@ -192,13 +192,19 @@ table.table-striped > tbody > tr td:nth-child(3)
 }
 
 
-
 .table td a, .table th a{
 text-decoration: none!important;
 color: grey!important;
 }
+
+
 ul li {
     line-height: 35px;
     font-size: 14px;
+}
+
+ul.small-li li {
+    line-height: 26px;
+    font-size: 12px;
 }
 
