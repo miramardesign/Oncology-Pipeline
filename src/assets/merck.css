@@ -165,8 +165,9 @@
     }
 }
 .border_home{
-    border-right:4px solid rgb(38, 178, 221);
+    border-right:4px solid #0066B3;
 }
+
 .table td, .table th {
     padding: .35rem!important;
     border:none!important;

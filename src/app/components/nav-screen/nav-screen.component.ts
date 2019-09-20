@@ -31,11 +31,11 @@ export class NavScreenComponent implements OnInit {
   ngOnInit() {
     this.pageData = NavPageData;
     this.trialData = TrialData;
-    this.disclaimer = NavFooter
+    this.disclaimer = NavFooter;
 
     this.dnaSection = this.trialService.getTrialBySectionName(this.trialData, 'DNA Damage Response (DDR)');
 
-    this.pathwaySection = this.trialService.getTrialBySectionName(this.trialData, 'Oncogenic Pathways');
+    this.pathwaySection = this.trialService.getTrialBySectionName(this.trialData, 'Oncogenic Pathwa9999ys');
 
     this.immunoSection = this.trialService.getTrialBySectionName(this.trialData, 'Immuno-Oncology');
 
