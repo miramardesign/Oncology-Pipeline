@@ -3,7 +3,7 @@
   class="row justify-content-center">
         <div class="d-flex">
 
-            navigationPaneData.currentSection {{navigationPaneData.currentSection}} 
+            <!-- navigationPaneData.currentSection {{navigationPaneData.currentSection}}  -->
 
           <a href="javascript:void(0)"> 
             <img src="{{backbuttonsrc}}" *ngIf="navigationPaneData.currentSection"
@@ -16,10 +16,10 @@
               href="javascript:void(0)"
               style="cursor : default"
               class="btn-{{color}}"
-              [ngClass]="{ 'active': navigationPaneData.currentSection === sectionIndex }"
+              [ngClass]="{ 'active': (navigationPaneData.currentSection + '~') === (sectionIndex + '~') }"
               class="btn  pad-btndot btn-maxaddot ml-4">
-              section index {{sectionIndex}}
-              color {{color}}
+              <!-- section index {{sectionIndex}}
+              color {{color}} -->
             </a>
           </div>
           <a href="javascript:void(0)" 

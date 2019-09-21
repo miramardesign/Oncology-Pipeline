@@ -68,4 +68,19 @@ export const getVideoUrl = (): string =>
  (WelcomePageData.find(sec =>
   (sec.sections).find(ele => ele.path == window.location.pathname.split('').reduce((prev, next) =>
    { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).video;
-export const getButtonImageColor = (): string => (WelcomePageData.find(sec => (sec.sections).find(ele => ele.path == window.location.pathname.split('').reduce((prev, next) => { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).color;
+
+
+/** looks up page and gets color from it., this didnt work remote on a sub-url/not flexible */
+//export const getButtonImageColor = (path): string => (WelcomePageData.find(sec => (sec.sections).find(ele => ele.path == path.split('').reduce((prev, next) => { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).color;
+export const getButtonImageColor = (location: Location): string => {
+
+const pathSplit = location.pathname.split('/');
+// console.log('location', location, 'pathsplit', pathSplit);
+
+const slug = pathSplit[pathSplit.length - 1];
+  //console.log('slug', slug);
+  return (WelcomePageData
+    .find(sec => (sec.sections)
+    .find(
+      ele => ele.path === slug, '') !== undefined) || {}).color;
+};
