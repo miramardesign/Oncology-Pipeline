@@ -19,7 +19,7 @@ export class NavigationFooter implements OnInit {
 
   ngOnInit() {
 
-    //console.log('locaiton', location);
+    // console.log('locaiton', location);
     this.color = getButtonImageColor( location);
     if (this.color === 'skyblue') {
       this.backbuttonsrc = 'assets/buttons/back-onco-path-btn.png';

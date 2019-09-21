@@ -41,3 +41,7 @@ Thumbs.db
 
 # Electron
 /electron-builds
+
+src/assets/videos/dna-damage-response-pathway-sept.mp4
+src/assets/videos/tgfb-trap-sept.mp4
+src/assets/videos/met-pathway-alterations-sept.mp4
