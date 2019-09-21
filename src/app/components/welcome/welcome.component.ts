@@ -28,6 +28,7 @@ export class WelcomeComponent implements OnInit {
   }
 
   videoEnded() {
+    console.log('videoended fired in welcom?');
     if (!this.modalRef) {
       return;
     }

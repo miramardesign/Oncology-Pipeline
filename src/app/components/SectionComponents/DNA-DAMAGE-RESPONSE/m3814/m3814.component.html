@@ -62,7 +62,13 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <video controls class="shadow-lg" [src]="videoLink" (ended)="videoEnded()" width="100%"></video>
+                      
+                        <!-- <video controls class="shadow-lg"
+                         [src]="videoLink" (ended)="videoEnded()" width="100%"></video> -->
+                         <app-video-control
+                          class="shadow-lg" [src]="videoLink" >
+                        </app-video-control>
+
                     </div>
                     <!-- Pagination -->
                     <div class="col-12">
