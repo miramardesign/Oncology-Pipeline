@@ -1,5 +1,5 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { ZincCode, WelcomePageData, images,welComeImages } from '../../data/content.data';
+import { ZincCode, WelcomePageData, images, welComeImages } from '../../data/content.data';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
 
@@ -18,6 +18,7 @@ export class WelcomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  /** is this ever called or is it olde? */
   openModal(template: TemplateRef<any>) {
     this.modalService.config.class = 'modal-xl';
     this.modalRef = this.modalService.show(template);
@@ -25,15 +26,6 @@ export class WelcomeComponent implements OnInit {
 
   goHome() {
     this.router.navigate(['/home']);
-  }
-
-  videoEnded() {
-    console.log('videoended fired in welcom?');
-    if (!this.modalRef) {
-      return;
-    }
-    this.modalRef.hide();
-    this.modalRef = null;
   }
 
   generateArray(number) {
