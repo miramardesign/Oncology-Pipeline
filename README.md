@@ -4,6 +4,19 @@ ng build --prod --base-href "https://miramardesign.github.io/Oncology-Pipeline/"
 # git history issue big files
 git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | sed -n 's/^blob //p' | sort --numeric-sort --key=2 | cut -c 1-12,41- | $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
 
+above yielded
+d84d438f27e8   43MiB src/assets/videos/dna-damage-response-pathway-sept.mp4
+d0eea5667166  102MiB src/assets/videos/met-pathway-alterations-sept.mp4
+fda0b2518b81  166MiB src/assets/videos/tgfb-trap-sept.mp4
+a1cf58228acf  238MiB src/assets/videos/dna-damage-response-pathway.mp4
+
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch src/assets/videos/dna-damage-response-pathway.mp4'
+
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch src/assets/videos/tgfb-trap.mp4'
+
+added videos back after
+
+
 # SeronoPipeline
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
