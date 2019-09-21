@@ -1,5 +1,5 @@
 # deploy 
-ng build --prod --base-href "https://miramardesign.github.io/Oncology-Pipeline/"  && ngh 
+ng build --prod --base-href "https://miramardesign.github.io/Oncology-Pipeline/serono-pipeline/"  && ngh 
 
 # git history issue big files
 git rev-list --objects --all | git cat-file --batch-check='%(objecttype) %(objectname) %(objectsize) %(rest)' | sed -n 's/^blob //p' | sort --numeric-sort --key=2 | cut -c 1-12,41- | $(command -v gnumfmt || echo numfmt) --field=2 --to=iec-i --suffix=B --padding=7 --round=nearest
@@ -13,6 +13,8 @@ a1cf58228acf  238MiB src/assets/videos/dna-damage-response-pathway.mp4
 git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch src/assets/videos/dna-damage-response-pathway.mp4'
 
 git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch src/assets/videos/tgfb-trap.mp4'
+
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch src/assets/videos/met-pathway-alterations.mp4'
 
 added videos back after
 

@@ -59,7 +59,7 @@ export const WelcomePageData: any[] = [
     btnImg: 'assets/home-page-elemets/onco-pathways-bg.png',
     video: 'assets/videos/met-pathway-alterations-sept.mp4',
     color: `skyblue`,
-    arrowImage: '/assets/buttons/home-onco-pathway-btn.png',
+    arrowImage: 'assets/buttons/home-onco-pathway-btn.png',
     Index: 2
   },
 ];
