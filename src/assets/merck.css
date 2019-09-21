@@ -176,7 +176,10 @@
 .table td{
     font-size:14px!important;
 }
-
+.ImageColumn img{
+    height: 25px;
+    width: 25px;
+}
 .ImageColumn,
 /** may need more specific identifier */ 
 table.table-striped > thead > tr th:nth-child(6),

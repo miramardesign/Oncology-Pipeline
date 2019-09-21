@@ -21,26 +21,26 @@ export class TepotinibComponent implements OnInit {
 
   generateArray = WelcomeComponent.prototype.generateArray;
 
-  isVisiblePlayPause = true;
-  videoPlayer: HTMLVideoElement;
+ // isVisiblePlayPause = true;
+  //videoPlayer: HTMLVideoElement;
 
-  @ViewChild('videoPlayer')
-  set mainVideoEl(el: ElementRef) {
-    this.videoPlayer = el.nativeElement;
-  }
+  // @ViewChild('videoPlayer')
+  // set mainVideoEl(el: ElementRef) {
+  //   this.videoPlayer = el.nativeElement;
+  // }
 
-  toggleVideo(event: any) {
-    const paused = this.videoPlayer.paused;
+  // toggleVideo(event: any) {
+  //   const paused = this.videoPlayer.paused;
 
-    if (paused) {
-      this.videoPlayer.play();
-      this.isVisiblePlayPause = false;
-    } else {
-      this.videoPlayer.pause();
-      this.isVisiblePlayPause = true;
+  //   if (paused) {
+  //     this.videoPlayer.play();
+  //     this.isVisiblePlayPause = false;
+  //   } else {
+  //     this.videoPlayer.pause();
+  //     this.isVisiblePlayPause = true;
 
-    }
-  }
+  //   }
+  // }
 
   ngOnInit() {
   }

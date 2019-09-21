@@ -46,16 +46,18 @@
 
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
+                       <app-video-control [src]="videoLink" ></app-video-control>
+
                         <!-- removed controls attribute -->
-                        <video  (click)="toggleVideo($event)" #videoPlayer  [src]="videoLink" width="100%">
-                        </video>
-                        <div class="playpause" *ngIf="isVisiblePlayPause" (click)="toggleVideo($event)" >
-                            <div class="round-bg">
-
-                                <div class="arrow">&nbsp;</div>
-                            </div>
-
-                        </div>
+                        <!-- <video  (click)="toggleVideo($event)" #videoPlayer  [src]="videoLink" width="100%">
+                            </video>
+                            <div class="playpause" *ngIf="isVisiblePlayPause" (click)="toggleVideo($event)" >
+                                <div class="round-bg">
+    
+                                    <div class="arrow">&nbsp;</div>
+                                </div>
+    
+                            </div> -->
                     </div>
 
 

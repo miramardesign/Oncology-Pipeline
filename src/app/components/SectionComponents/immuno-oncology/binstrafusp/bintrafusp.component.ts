@@ -15,8 +15,8 @@ export class ImmunoOncologyBintrafuspComponent implements OnInit {
   navigationHolder = {
     numberOfSections: 3,
     currentSection: 0
-  }
-  videoLink = "";
+  };
+  videoLink = '';
   constructor(
     public router: Router
   ) {
