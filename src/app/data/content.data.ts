@@ -29,7 +29,7 @@ export const WelcomePageData: any[] = [
     { title: 'M9241 (NHS-IL12)', subTitle: 'Cancer immunotherapy', phase: 1, path: 'M9241' }
     ],
     btnImg: 'assets/home-page-elemets/immuno-onc-bg.png',
-    video: 'assets/videos/tgfb-trap.mp4',
+    video: 'assets/videos/tgfb-trap-sept.mp4',
     color: `navyblue`,
     arrowImage: 'assets/buttons/home-immuno-onc-btn.png',
     Index: 0
@@ -43,7 +43,7 @@ export const WelcomePageData: any[] = [
     { title: 'M3541', subTitle: 'ATM inhibitor', phase: 1, path: 'M3814' },
     ],
     btnImg: 'assets/home-page-elemets/ddr-bg.png',
-    video: 'assets/videos/dna-damage-response-pathway.mp4',
+    video: 'assets/videos/dna-damage-response-pathway-sept.mp4',
     color: `yellow`,
     arrowImage: 'assets/buttons/home-ddr-btn.png',
     Index: 1
@@ -57,7 +57,7 @@ export const WelcomePageData: any[] = [
       { title: 'M7583', subTitle: 'BTK inhibitor', phase: 1, path: 'M7583' },
     ],
     btnImg: 'assets/home-page-elemets/onco-pathways-bg.png',
-    video: 'assets/videos/met-pathway-alterations.mp4',
+    video: 'assets/videos/met-pathway-alterations-sept.mp4',
     color: `skyblue`,
     arrowImage: '/assets/buttons/home-onco-pathway-btn.png',
     Index: 2

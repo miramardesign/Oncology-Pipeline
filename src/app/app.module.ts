@@ -30,6 +30,7 @@ import { M8891Component } from './components/SectionComponents/ONCOGENIC-PATHWAY
 import { M7583Component } from './components/SectionComponents/ONCOGENIC-PATHWAYS/m7583/m7583.component';
 import { NavigationFooter } from './components/global/navigation-footer/navigation-footer.component';
 import { VideoControlComponent } from './components/shared/video-control/video-control.component';
+import { TitleHeaderHomeComponent } from './components/shared/title-header-home/title-header-home.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -58,7 +59,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     M8891Component,
     M7583Component,
     NavigationFooter,
-    VideoControlComponent
+    VideoControlComponent,
+    TitleHeaderHomeComponent
   ],
   imports: [
     BrowserModule,
