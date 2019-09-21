@@ -14,7 +14,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class NavScreenComponent implements OnInit {
   pageData: INavPage;
   trialData: ITrialSection[];
-  disclaimer: string
+  disclaimer: string;
   dnaSection: ITrialSection;
   pathwaySection: ITrialSection;
   immunoSection: ITrialSection;
@@ -46,10 +46,5 @@ export class NavScreenComponent implements OnInit {
     // this.navEvent.emit(slideId + 1);
     this.router.navigate([ '/slides', slideGroup ]);
   }
-
-
-
-
-
 
 }

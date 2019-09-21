@@ -3,12 +3,19 @@
     border-radius: 40%;
     padding: 8px;
 }
-.btn-oncology{
+
+// 'btn-oncology':color=='skyblue' && navigationPaneData.currentSection === sectionIndex,
+// 'btn-immuno':color=='navyblue' && navigationPaneData.currentSection === sectionIndex,
+// 'btn-ddr':color=='yellow' && navigationPaneData.currentSection === sectionIndex
+
+.btn-skyblue.active{
     background-color: #16becf; 
 }
-.btn-immuno{
+.btn-navyblue.active{
     background-color: #522E91;
 }
-.btn-ddr{
+.btn-yellow.active{
     background-color: #FFCB05;
 }
+
+
