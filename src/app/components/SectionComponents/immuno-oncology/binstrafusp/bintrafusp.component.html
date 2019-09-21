@@ -41,7 +41,13 @@
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <video controls class="shadow-lg" [src]="videoLink" (ended)="videoEnded()" width="100%"></video>
+                        <!-- <video controls class="shadow-lg" [src]="videoLink"
+                         (ended)="videoEnded()" width="100%"></video>
+                    -->
+                       
+                        <app-video-control [src]="videoLink" ></app-video-control>
+
+                   
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-center mt-4">
@@ -135,7 +141,7 @@
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 0024:</b> Stage IV NSCLC CT combo</td>
+                                        <td><b>Study 024:</b> Stage IV NSCLC CT combo</td>
                                         <td>1L/2L</td>
                                         <td> Phase Ib/II</td>
                                         <td>Combination with chemotherapy </td>
