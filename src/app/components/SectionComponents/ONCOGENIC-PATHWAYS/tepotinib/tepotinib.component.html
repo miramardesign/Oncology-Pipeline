@@ -1,19 +1,21 @@
 <div class="container-fluid  background_merckDetail">
 
-        <div class="row justify-content-between p-5 ml-1">
-                <div>
-                    <h1 class="merckFont colouroncology">Merck</h1>
-                </div>
-                <div class="d-flex">
-                    <div class="positionhead pt-2 pr-4 border_home">
-                        <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS </h2>
-                    </div>
-                    <div class="positionhome pl-4">
-                        <a [routerLink]="'/'" >  <img src="assets/buttons/home-btn.png"
-                            alt="Home" height="50" width="50"></a>
-                    </div>
-                </div>
+    <div class="row justify-content-between p-5 ml-1">
+        <div>
+            <h1 class="merckFont colouroncology">Merck</h1>
+        </div>
+        <div class="d-flex">
+            <div class="positionhead pt-2 pr-4 border_home">
+                <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS </h2>
             </div>
+            <div class="positionhome pl-4">
+                <a [routerLink]="'/'"> <img src="assets/buttons/home-btn.png"
+                        alt="Home"
+                        height="50"
+                        width="50"></a>
+            </div>
+        </div>
+    </div>
     <ng-container [ngSwitch]="navigationHolder.currentSection">
         <ng-container *ngSwitchCase="0">
             <div class="main-content">
@@ -25,20 +27,27 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <p class="font-weight-bold f-16 pl-4"> Proposed profile</p>
                         <ul class="small-li">
-                            <li>Tepotinib is an investigational oral MET inhibitor.<sup>1,2</sup> This molecule is currently under clinical investigation and has not been proven to be safe and effective</li>
-                            <li>MET activation is a key driver of tumor progression and therapy resistance<sup>3</sup></li>
+                            <li>Tepotinib is an investigational oral MET inhibitor.<sup>1,2</sup> This molecule is
+                                currently under clinical investigation and has not been proven to be safe and effective
+                            </li>
+                            <li>MET activation is a key driver of tumor progression and therapy resistance<sup>3</sup>
+                            </li>
                             <li>Two different roles for MET in tumor biology make it a plausible target:</li>
 
                         </ul>
                         <div class="pl-5">
                             <p class="f-12">─ MET can act as driver of tumorigenesis<sup>4-7</sup></p>
                             <ul class="small-li">
-                                <li>Some tumors depend on MET signaling for their growth, represented by MET pathway aberrations (MET can act as <i>MET</i> amplification, <i>MET</i> activating mutations – such as <i>MET</i> exon 14 skipping, MET and/or HGF overexpression)</li>
+                                <li>Some tumors depend on MET signaling for their growth, represented by MET pathway
+                                    aberrations (MET can act as <i>MET</i> amplification, <i>MET</i> activating
+                                    mutations – such as <i>MET</i> exon 14 skipping, MET and/or HGF overexpression)</li>
 
                             </ul>
                             <p class="f-12">─ MET can act as co-stimulatory or resistance mediator<sup>4-8</sup></p>
                             <ul class="small-li">
-                                <li>Disruption of tumor growth may be achieved by interfering with cross-talking pathways between MET and other RTKs, to block different tumor-specific pathways in parallel
+                                <li>Disruption of tumor growth may be achieved by interfering with cross-talking
+                                    pathways between MET and other RTKs, to block different tumor-specific pathways in
+                                    parallel
                                 </li>
 
                             </ul>
@@ -46,35 +55,49 @@
 
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                       <app-video-control [src]="videoLink" ></app-video-control>
+                        <app-video-control [src]="videoLink"></app-video-control>
 
                     </div>
 
 
 
 
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <!-- Pagination -->
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+
+            <nav>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+            </nav>
+
+
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        <app-pipeline-compounds></app-pipeline-compounds>
-                         RTKs – receptor Tyrosine Kinases<br> *Tepotinib (EMD 1214063; MSC2156119J) is under clinical investigation and has not been proven to be safe and effective.There is no guarantee tepotinib will be approved in the sought-after indications.The
-                        relevance of these preclinical <br>findings on the efficacy and safety in the clinical setting has not been established. <br>1. Bladt F, et al. Clin Cancer Res 2013;19:2941-51. 2. Srivastava AK, et al.J Clin Oncol 2013;31(Suppl):Abstract 11103
-                        and poster (ASCO 2013). 3. Peruzzi B, et al. Clin Cancer Res 2006;12:3657-60.
-                         4. Ghiso E, Giordano S. Curr Opin  <br> Pharmacol 2013;13:511-8. 5. Maroun CR, Rowlands T. Pharmacol Ther 2014;142:316-38. 6. Graveel CR, et al. Cold Spring Harb Perspect Biol 2013;5.pii:a009209. 7. Skead G, Govender D. J Clin
-                        Pathol 2015;68:405- 9. 8. Huang L, Fu L. Acta<br> Pharm Sin B 2015;5:390-401.</div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">
+                            <app-pipeline-compounds></app-pipeline-compounds>
+                            RTKs – receptor Tyrosine Kinases<br> *Tepotinib (EMD 1214063; MSC2156119J) is under clinical
+                            investigation and has not been proven to be safe and effective.There is no guarantee
+                            tepotinib will be approved in the sought-after indications.The
+                            relevance of these preclinical <br>findings on the efficacy and safety in the clinical
+                            setting has not been established. <br>1. Bladt F, et al. Clin Cancer Res 2013;19:2941-51. 2.
+                            Srivastava AK, et al.J Clin Oncol 2013;31(Suppl):Abstract 11103
+                            and poster (ASCO 2013). 3. Peruzzi B, et al. Clin Cancer Res 2006;12:3657-60.
+                            4. Ghiso E, Giordano S. Curr Opin <br> Pharmacol 2013;13:511-8. 5. Maroun CR, Rowlands T.
+                            Pharmacol Ther 2014;142:316-38. 6. Graveel CR, et al. Cold Spring Harb Perspect Biol
+                            2013;5.pii:a009209. 7. Skead G, Govender D. J Clin
+                            Pathol 2015;68:405- 9. 8. Huang L, Fu L. Acta<br> Pharm Sin B 2015;5:390-401.
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
+                    </div>
                 </div>
             </div>
-        </div>
         </ng-container>
 
 
@@ -103,10 +126,13 @@
                                 <tbody>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Solid tumors</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Solid tumors (FIM)</td>
                                         <td>Any</td>
                                         <td>Phase I</td>
@@ -114,7 +140,9 @@
                                         <td>NCT01014936</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Solid tumors – Japan</td>
                                         <td>Any</td>
                                         <td>Phase I</td>
@@ -123,10 +151,13 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Healthy volunteers</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Healthy volunteers</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Bioavailability (100-mg/500-mg tablets) </td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -134,7 +165,9 @@
                                         <td>NCT03021642</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Pharmacokinetics on P-gp </td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -142,7 +175,9 @@
                                         <td>NCT03492437</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Pharmacokinetics with PPI </td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -150,7 +185,9 @@
                                         <td>NCT03531762</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Hepatic impairment (PK, safety) </td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -158,7 +195,9 @@
                                         <td>NCT03546608</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Pharmacokinetics with CYP3A substrate </td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -166,7 +205,9 @@
                                         <td>NCT03628339</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Bioequivalence of TF3 compared to TF2/ pharmacokinetics with food</td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -177,28 +218,43 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
-                                </div>
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14"> &nbsp;&nbsp; Study closed
+                                    for enrollment&nbsp;&nbsp;</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
 
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            <nav>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+            </nav>
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        <app-pipeline-compounds></app-pipeline-compounds></div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">
+                            <app-pipeline-compounds></app-pipeline-compounds>
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
         </ng-container>
         <ng-container *ngSwitchCase="2">
@@ -226,10 +282,13 @@
                                 <tbody>
                                     <tr class="bg-white">
                                         <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">Hepatocellular carcinoma</td>
+                                        <td class="font-weight-bold text-black"
+                                            colspan="5">Hepatocellular carcinoma</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Asian MET+ HCC</td>
                                         <td>1L</td>
                                         <td>Phase Ib/II</td>
@@ -237,19 +296,26 @@
                                         <td>NCT01988493</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>MET+ HCC</td>
                                         <td>2L</td>
                                         <td>Phase Ib/II</td>
                                         <td>Monotherapy</td>
-                                        <td><a href="href='https://clinicaltrials.gov/ct2/show/NCT02115373'">NCT02115373</a></td>
+                                        <td><a
+                                                href="href='https://clinicaltrials.gov/ct2/show/NCT02115373'">NCT02115373</a>
+                                        </td>
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">Non-small cell lung cancer</td>
+                                        <td class="font-weight-bold text-black"
+                                            colspan="5">Non-small cell lung cancer</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>VISION: METex14/<i>MET</i>-amplified NSCLC</td>
                                         <td>Any*</td>
                                         <td>Phase II</td>
@@ -257,15 +323,20 @@
                                         <td>NCT02864992</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>INSIGHT: MET+, <i>EGFR</i>m+ NSCLC </td>
                                         <td>2L</td>
                                         <td>Phase Ib/II </td>
-                                        <td>Combination with gefitinib <b>vs</b> <br> pemetrexed + carboplatin/cisplatin </td>
+                                        <td>Combination with gefitinib <b>vs</b> <br> pemetrexed + carboplatin/cisplatin
+                                        </td>
                                         <td>NCT01982955</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>INSIGHT 2: <i>MET</i> amplified, <i>EGFR</i>m+ NSCLC </td>
                                         <td>2L</td>
                                         <td>Phase II </td>
@@ -275,33 +346,49 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
-                                </div>
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14"> &nbsp;&nbsp; Study closed
+                                    for enrollment&nbsp;&nbsp;</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
+            <nav>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+            </nav>
+
+
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        Updated: August 5, 2019 <br />
-                        <app-pipeline-compounds></app-pipeline-compounds>
-                        *Treatment-naive patients receiving first-line therapy or pretreated patients
-                         receiving no more than 2 lines of prior therapy.
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">
+                            Updated: August 5, 2019 <br />
+                            <app-pipeline-compounds></app-pipeline-compounds>
+                            *Treatment-naive patients receiving first-line therapy or pretreated patients
+                            receiving no more than 2 lines of prior therapy.
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
                     </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
                 </div>
             </div>
-        </div>
         </ng-container>
 
     </ng-container>
