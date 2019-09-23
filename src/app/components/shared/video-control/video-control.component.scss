@@ -1,11 +1,12 @@
+#video-player{
+    // trying to deal with the player pushing bottom down.
+    max-height: 87%;
+}
 
 .playpause {
-    // background-image:url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
     background-repeat:no-repeat;
     width:50%;
     height:30%;    
-    // height:50%;
-
     position:absolute;
     left:0%;
     right:0%;
@@ -13,7 +14,6 @@
     bottom:0%;
     margin: auto;
     background-size:contain;
-    // background-position: center; 
 }
 
 .round-bg{

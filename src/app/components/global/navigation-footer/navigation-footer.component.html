@@ -1,34 +1,54 @@
-
-<div *ngIf="navigationPaneData" 
+<div *ngIf="navigationPaneData"
   class="row justify-content-center">
-        <div class="d-flex">
+  <div class="d-flex">
 
-            <!-- navigationPaneData.currentSection {{navigationPaneData.currentSection}}  -->
 
-          <a href="javascript:void(0)"> 
-            <img src="{{backbuttonsrc}}" *ngIf="navigationPaneData.currentSection"
-              (click)="navigationPaneData.currentSection=navigationPaneData.currentSection-1"
-               height="30" width="100">
-            </a>
-          <div class="d-flex pt-2 ml-5 mr-5">
-           
-            <a *ngFor="let sectionIndex of generateArray(navigationPaneData.numberOfSections)"
-              href="javascript:void(0)"
-              style="cursor : default"
-              class="btn-{{color}}"
-              [ngClass]="{ 'active': (navigationPaneData.currentSection + '~') === (sectionIndex + '~') }"
-              class="btn  pad-btndot btn-maxaddot ml-4">
-              <!-- section index {{sectionIndex}}
+
+    <a *ngIf="!navigationPaneData.currentSection"
+      class="btn-disabled">
+      <img src="{{backbuttonsrc}}"
+        height="30"
+        width="100">
+    </a>
+
+
+    
+    <a href="javascript:void(0)">
+      <img src="{{backbuttonsrc}}"
+        *ngIf="navigationPaneData.currentSection"
+        (click)="navigationPaneData.currentSection=navigationPaneData.currentSection-1"
+        height="30"
+        width="100">
+    </a>
+    <div class="d-flex pt-2 ml-5 mr-5">
+
+      <a *ngFor="let sectionIndex of generateArray(navigationPaneData.numberOfSections)"
+        href="javascript:void(0)"
+        style="cursor : default"
+        class="btn-{{color}}"
+        [ngClass]="{ 'active': (navigationPaneData.currentSection + '~') === (sectionIndex + '~') }"
+        class="btn  pad-btndot btn-maxaddot ml-4">
+        <!-- section index {{sectionIndex}}
               color {{color}} -->
-            </a>
-          </div>
-          <a href="javascript:void(0)" 
-          *ngIf="navigationPaneData.currentSection < navigationPaneData.numberOfSections-1"
-            (click)="navigationPaneData.currentSection=navigationPaneData.currentSection+1"> 
-            <img src="{{nextbuttonsrc}}"
-              height="30"
-              width="100"></a>
+      </a>
+    </div>
+    <a href="javascript:void(0)"
+      *ngIf="navigationPaneData.currentSection < navigationPaneData.numberOfSections-1"
+      (click)="navigationPaneData.currentSection=navigationPaneData.currentSection+1">
+      <img src="{{nextbuttonsrc}}"
+        height="30"
+        width="100"></a>
 
-        </div>
+    <!-- disabled so it doesnt jump around?, jump around! -->
+    <a *ngIf="! (navigationPaneData.currentSection < navigationPaneData.numberOfSections-1)"
+      class="btn-disabled">
+      <img src="{{nextbuttonsrc}}"
+        height="30"
+        width="100">
+    </a>
 
-      </div>
+
+
+  </div>
+
+</div>

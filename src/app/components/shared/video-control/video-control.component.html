@@ -1,12 +1,14 @@
 <!-- removed controls attribute -->
-<video *ngIf="videoLink"
+<video id="video-player"
+  *ngIf="videoLink"
   (click)="toggleVideo($event)"
   (ended)="videoEnded()"
   #videoPlayer
   [src]="videoLink"
-  width="100%"
-></video>
-<div class="playpause" *ngIf="isVisiblePlayPause" (click)="toggleVideo($event)">
+  width="100%"></video>
+<div class="playpause"
+  *ngIf="isVisiblePlayPause"
+  (click)="toggleVideo($event)">
   <div class="round-bg">
     <div class="arrow">&nbsp;</div>
   </div>
