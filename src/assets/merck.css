@@ -262,7 +262,7 @@ ul li {
     font-size: 14px;
 }
 
-ul.small-li li {
+ul.small-li li ul.small-li li div {
     line-height: 26px;
     font-size: 12px;
 }
