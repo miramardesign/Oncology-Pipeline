@@ -182,6 +182,48 @@
     vertical-align: middle;
 }
 
+.table.table-striped thead .ImageColumn{
+    width: 10%;
+}
+
+/* 10,25,10,10,25,20 = 100 */
+
+.table.table-striped thead th:nth-child(2), .LineColumn{
+    width: 25%;
+    /* background-color: blue; */
+}
+.table.table-striped thead th:nth-child(3), 
+.table.table-striped thead th:nth-child(4)
+{
+    width: 10%;
+    /* background-color: green; */
+}
+.table.table-striped thead th:nth-child(5)
+{
+    width: 25%;
+    /* background-color: gold; */
+}
+.table.table-striped thead th:nth-child(6)
+{
+    width: 25%;
+    /* background-color: red; */
+}
+.table.table-striped thead th.agent
+{
+    width: 30%;
+    /* background-color: red; */
+}
+.table.table-striped thead th.moa
+{
+    width: 30%;
+    /* background-color: green; */
+}
+
+.table.table-striped thead th.route
+{
+    width: 40%;
+    /* background-color: purple; */
+}
 .table td{
     font-size:14px!important;
 }
