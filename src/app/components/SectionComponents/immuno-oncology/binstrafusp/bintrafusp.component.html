@@ -1,357 +1,394 @@
 <div class="container-fluid  background_merckDetail">
-    <div class="row justify-content-between p-5 ml-1">
-        <div>  
-            <h1 class="merckFont colouroncology">Merck</h1>
-        </div>
-        <div class="d-flex">
-        
-        
-            <div class="positionhead pt-2 pr-2 border_home">
-                <h2 class="merckFont colouroncology">IMMUNO-ONCOLOGY</h2>
-            </div>
-            <div class="positionhome pl-2">
-                <a [routerLink]="'/'" >  <img src="assets/buttons/home-btn.png" alt="image not found" height="50" width="50"></a>
-            </div>
-        </div>
+  <div class="row justify-content-between p-5 ml-1">
+    <div>
+      <h1 class="merckFont colouroncology">Merck</h1>
     </div>
-    <ng-container [ngSwitch]="navigationHolder.currentSection">
-        <ng-container *ngSwitchCase="0">
-            <div class="main-content">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
-                            <br> (TGF-β trap/anti–PD-L1)</h2>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <p class="font-weight-bold f-16 pl-4"> Proposed profile</p>
-                        <ul class="small-li">
-                            <li>Bintrafusp alfa (M7824) is an innovative bi-functional fusion protein<sup>1</sup> composed of <br>the extracellular domain of human TGF-β receptor II (a TGF-β “trap”) fused to a fully<br> human IgG1 mAb blocking PD-L1</li>
-                            <li>This molecule is currently under clinical investigation and has not been proven to be<br> safe and effective</li>
-                            <li>
-                                Evasion of antitumor immunity is a hallmark of cancer<sup>2</sup>
+    <div class="d-flex">
 
-                                <div class="pl-5">
-                                    ─ TGF-β is a regulatory cytokine with diverse effects in the immune system that<br> maintains immunologic self-tolerance<sup>3-5</sup><br> ─ PD-1 and PD-L1 dampen T-cell activity and can be co-opted by tumors to suppress<br> T-cell–mediated
-                                    antitumor immune responses<sup>6</sup>
-                                </div>
-                            </li>
-                            <li>
-                                The TGF-β and PD-L1 pathways are 2 key tumor immune evasion pathways that are thought to have independent and complementary immunosuppressive functions
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <!-- <video controls class="shadow-lg" [src]="videoLink"
+
+      <div class="positionhead pt-2 pr-4 border_home">
+        <h2 class="merckFont colouroncology">IMMUNO-ONCOLOGY</h2>
+      </div>
+      <div class="positionhome pl-4">
+        <a [routerLink]="'/'"> <img src="assets/buttons/home-btn.png" alt="Home" height="50" width="50"></a>
+      </div>
+    </div>
+  </div>
+  <ng-container [ngSwitch]="navigationHolder.currentSection">
+    <ng-container *ngSwitchCase="0">
+      <div class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
+              <br> (TGF-β trap/anti–PD-L1)</h2>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <p class="font-weight-bold f-16 pl-4"> Proposed profile</p>
+            <ul class="small-li">
+              <li>Bintrafusp alfa (M7824) is an innovative bi-functional fusion protein<sup>1</sup> composed of <br>the
+                extracellular domain of human TGF-β receptor II (a TGF-β “trap”) fused to a fully<br> human IgG1 mAb
+                blocking PD-L1</li>
+              <li>This molecule is currently under clinical investigation and has not been proven to be<br> safe and
+                effective</li>
+              <li>
+                Evasion of antitumor immunity is a hallmark of cancer<sup>2</sup>
+
+                <div class="pl-5">
+                  ─ TGF-β is a regulatory cytokine with diverse effects in the immune system that<br> maintains
+                  immunologic self-tolerance<sup>3-5</sup><br> ─ PD-1 and PD-L1 dampen T-cell activity and can be
+                  co-opted by tumors to suppress<br> T-cell–mediated
+                  antitumor immune responses<sup>6</sup>
+                </div>
+              </li>
+              <li>
+                The TGF-β and PD-L1 pathways are 2 key tumor immune evasion pathways that are thought to have
+                independent and complementary immunosuppressive functions
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <!-- <video controls class="shadow-lg" [src]="videoLink"
                          (ended)="videoEnded()" width="100%"></video>
                     -->
-                       
-                        <app-video-control [src]="videoLink" ></app-video-control>
 
-                   
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <!-- Pagination -->
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
-                </div>
+            <app-video-control [src]="videoLink"></app-video-control>
+
+
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center mt-4">
+              <!-- Pagination -->
+              <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
             </div>
-            <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        <app-pipeline-compounds></app-pipeline-compounds>
-                        *Bintrafusp alfa (M7824) is under clinical investigation and has not been proven to be safe and effective. There is no guarantee M7824 will be approved in the sought-after indications. The relevance
-                        of these preclinical findings <br>on the efficacy and safety in the clinical setting has not been established.
-                        <br>1. Lan Y, et al. Sci. Transl. Med 2018;10(424):eaan5488. 2. Hanahan D, Weinberg R. Cell 2011;144(5):646-74. 3. Akhurst RJ, Hata A. Nat Rev Drug Discov 2012;11(10):790-811. 4. Wrzesinski SH, et al. Clin Cancer Res<br> 2007;13:5262-70.
-                        5. Li MO, et al. Immunity 2008;28:468-76. 6. Pardoll DM. Nat Rev Cancer 2012;12(4):252-64.
-                    </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
-                </div>
-            </div>
+          </div>
         </div>
-        </ng-container>
-
-
-        <ng-container *ngSwitchCase="1">
-            <!-- Section 2 -->
-            <div class="main-content">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
-                            <br> (TGF-β trap/anti–PD-L1)</h2>
-                    </div>
-
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <p class="font-weight-bold f-16"> Clinical trial program overview</p>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead class="btn-immuno text-white">
-                                    <tr>
-                                        <th class="ImageColumn">Enroll</th>
-                                        <th>Clinical Trial</th>
-                                        <th>Line </th>
-                                        <th>Phase</th>
-                                        <th>Bintrafusp Alfa Treatment</th>
-                                        <th>ClinicalTrials.gov Identifier</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="bg-white">
-                                        <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 001:</b> Solid tumors</td>
-                                        <td>Any</td>
-                                        <td>Phase I</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT02517398</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
-                                        <td><b>Study 008:</b> Solid tumors – Asia</td>
-                                        <td>Any</td>
-                                        <td>Phase I</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT02699515</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">NSCLC</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 037:</b> Advanced NSCLC<br> (PD-L1-High)
-                                        </td>
-                                        <td>1L</td>
-                                        <td>Phase II</td>
-                                        <td>Monotherapy vs pembrolizumab</td>
-                                        <td>NCT03631706</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 005:</b> Stage III NSCLC cCRT </td>
-                                        <td>Stage III</td>
-                                        <td>Phase II</td>
-                                        <td>RT-CT combination vs durvalumab </td>
-                                        <td>NCT03840902</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 024:</b> Stage IV NSCLC CT combo</td>
-                                        <td>1L/2L</td>
-                                        <td> Phase Ib/II</td>
-                                        <td>Combination with chemotherapy </td>
-                                        <td>NCT03840915</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">BTC</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 047:</b> 2L BTC </td>
-                                        <td>2L</td>
-                                        <td>Phase II</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT03833661</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>Study 055:</b> 1L BTC </td>
-                                        <td>1L</td>
-                                        <td>Phase II/III</td>
-                                        <td>Combination with <br> gemcitabine plus cisplatin</td>
-                                        <td>NCT04066491</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="d-flex justify-content-end">
-                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <ul>
-                            <li>
-                                In addition, bintrafusp alfa is being evaluated in 
-                                several studies sponsored by academic research institute collaboration partners
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
-                    <!-- Footer -->
-                    
-                    <div class="col-md-12 np pt-4 ">
-                        <div class="d-flex justify-content-between footer-disclaimers">
-                            <div class="p-2 f-10 text-dark">
-                               Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of these compounds are still under investigation in various indications. Regulatory approval is dependent on the completion of <br>the study programs and review by local regulatory authorities, and varies from country to country. Clinical trial information is available at www.clinicaltrials.gov.
-                            </div>
-                            <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
-                    </div>
-                </div>
-                </div>
+      </div>
+      <div class="row pt-5 pl-4">
+        <div class="col-12 needs-row-parent-pt-5-pl-4">
+          <div class="d-flex justify-content-between footer-disclaimers">
+            <div class="p-2 f-10 text-dark">
+              <app-pipeline-compounds></app-pipeline-compounds>
+              *Bintrafusp alfa (M7824) is under clinical investigation and has not been proven to be safe and effective.
+              There is no guarantee M7824 will be approved in the sought-after indications. The relevance
+              of these preclinical findings <br>on the efficacy and safety in the clinical setting has not been
+              established.
+              <br>1. Lan Y, et al. Sci. Transl. Med 2018;10(424):eaan5488. 2. Hanahan D, Weinberg R. Cell
+              2011;144(5):646-74. 3. Akhurst RJ, Hata A. Nat Rev Drug Discov 2012;11(10):790-811. 4. Wrzesinski SH, et
+              al. Clin Cancer Res<br> 2007;13:5262-70.
+              5. Li MO, et al. Immunity 2008;28:468-76. 6. Pardoll DM. Nat Rev Cancer 2012;12(4):252-64.
             </div>
-        </ng-container>
-        <ng-container *ngSwitchCase="2">
-            <!-- Section 2 -->
-
-            <div class="main-content">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
-                            <br> (TGF-β trap/anti–PD-L1)</h2>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="d-flex flex-row f-14">
-                            <p class="font-weight-bold "> Clinical trial program overview | </p>
-                            &nbsp;  List of bintrafusp alfa trials sponsored by the NCI or MD Anderson Cancer Center</div>
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead class="btn-immuno text-white">
-                                    <tr>
-                                        <th class="ImageColumn">Enrolling</th>
-                                        <th>Clinical Trial</th>
-                                        <th>Line </th>
-                                        <th>Phase</th>
-                                        <th>Bintrafusp Alfa Treatment</th>
-                                        <th>ClinicalTrials.gov Identifier</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="bg-white">
-                                        <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">HPV associated</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>HPV+ cancers</td>
-                                        <td>2L+</td>
-                                        <td>Phase II</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT03427411</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>Recurrent respiratory papillomatosis</td>
-                                        <td>1L+</td>
-                                        <td>Phase II</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT03707587</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">Breast cancer</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>RACHEL1:</b> HR+/HER2− BC</td>
-                                        <td>2L+</td>
-                                        <td>Phase I</td>
-                                        <td>Combination with radiation</td>
-                                        <td>NCT03524170</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>TNBC </td>
-                                        <td>3L+</td>
-                                        <td>Phase I</td>
-                                        <td>Combination with eribulin </td>
-                                        <td>NCT03579472</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>Stage II/III HER2+ BC</td>
-                                        <td>NeoAdj</td>
-                                        <td>Phase I</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT03620201</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">Prostate cancer</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>Biochemically recurrent prostate cancer</td>
-                                        <td>2L+</td>
-                                        <td>Phase II</td>
-                                        <td>Combination with PROSTVAC + CV301</td>
-                                        <td>NCT03315871</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td><b>QuEST1:</b> includes mCRPC cohort</td>
-                                        <td>1L+</td>
-                                        <td>Phase I/II</td>
-                                        <td>Various combinations with epacadostat + <br> ALT-803 + BN-Brachyury vaccine</td>
-                                        <td>NCT03493945</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td></td>
-                                        <td class="font-weight-bold text-black" colspan="5">Other</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>MSI-H solid tumors, MSI-H mCRC, and CMS4,<br> mCRC
-                                        </td>
-                                        <td>2L+</td>
-                                        <td>Phase I/II</td>
-                                        <td>Monotherapy</td>
-                                        <td>NCT03436563</td>
-                                    </tr>
-                                    <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
-                                        <td>Pancreatic cancer </td>
-                                        <td>2L</td>
-                                        <td>Phase I/II</td>
-                                        <td>Combination with gemcitabine</td>
-                                        <td>NCT03451773</td>
-                                    </tr>
-                                    <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25"></td>
-                                        <td>SCLC</td>
-                                        <td>2L+</td>
-                                        <td>Phase I/II</td>
-                                        <td>Combination with topotecan or TMZ</td>
-                                        <td>NCT03554473</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="d-flex justify-content-end">
-                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4 was-mb-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
-                    <!-- Footer -->
-                    <div class="row pt-5 pl-4">
-                    <div class="col-12 needs-row-parent-pt-5-pl-4">
-                        <div class="d-flex justify-content-between footer-disclaimers">
-                            <div class="p-2 f-10 text-dark">
-                                <app-pipeline-compounds></app-pipeline-compounds>
-                            </div>
-                            <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
-                        </div>
-                </div>
-            </div>
-
-                </div>
-            </div>
-        </ng-container>
-
+            <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+          </div>
+        </div>
+      </div>
     </ng-container>
+
+
+    <ng-container *ngSwitchCase="1">
+      <!-- Section 2 -->
+      <div class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
+              <br> (TGF-β trap/anti–PD-L1)</h2>
+          </div>
+
+          <div class="col-12">
+            <p class="font-weight-bold f-16"> Clinical trial program overview</p>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead class="btn-immuno text-white">
+                  <tr>
+                    <th class="ImageColumn">Enrolling</th>
+                    <th>Clinical Trial</th>
+                    <th>Line </th>
+                    <th>Phase</th>
+                    <th>Bintrafusp Alfa Treatment</th>
+                    <th>ClinicalTrials.gov Identifier</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white">
+                    <td></td>
+                    <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 001:</b> Solid tumors</td>
+                    <td>Any</td>
+                    <td>Phase I</td>
+                    <td>Monotherapy</td>
+                    <td>NCT02517398</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                    <td><b>Study 008:</b> Solid tumors – Asia</td>
+                    <td>Any</td>
+                    <td>Phase I</td>
+                    <td>Monotherapy</td>
+                    <td>NCT02699515</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td></td>
+                    <td colspan="5" class="font-weight-bold text-black">NSCLC</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 037:</b> Advanced NSCLC<br> (PD-L1-High)
+                    </td>
+                    <td>1L</td>
+                    <td>Phase II</td>
+                    <td>Monotherapy vs pembrolizumab</td>
+                    <td>NCT03631706</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 005:</b> Stage III NSCLC cCRT </td>
+                    <td>Stage III</td>
+                    <td>Phase II</td>
+                    <td>RT-CT combination vs durvalumab </td>
+                    <td>NCT03840902</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 024:</b> Stage IV NSCLC CT combo</td>
+                    <td>1L/2L</td>
+                    <td> Phase Ib/II</td>
+                    <td>Combination with chemotherapy </td>
+                    <td>NCT03840915</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td></td>
+                    <td colspan="5" class="font-weight-bold text-black">BTC</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 047:</b> 2L BTC </td>
+                    <td>2L</td>
+                    <td>Phase II</td>
+                    <td>Monotherapy</td>
+                    <td>NCT03833661</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>Study 055:</b> 1L BTC </td>
+                    <td>1L</td>
+                    <td>Phase II/III</td>
+                    <td>Combination with <br> gemcitabine plus cisplatin</td>
+                    <td>NCT04066491</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end">
+                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                  title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently recruiting
+                  &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25"
+                  title="Study closed for enrollment"> <span class="f-14"> &nbsp;&nbsp; Study closed for
+                  enrollment&nbsp;&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <ul>
+              <li>
+                In addition, bintrafusp alfa is being evaluated in
+                several studies sponsored by academic research institute collaboration partners
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center mt-4">
+              <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+            </div>
+          </div>
+          <!-- Footer -->
+
+          <div class="col-md-12 np pt-4 ">
+            <div class="d-flex justify-content-between footer-disclaimers">
+              <div class="p-2 f-10 text-dark">
+                Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and safety of
+                these compounds are still under investigation in various indications. Regulatory approval is dependent
+                on the completion of <br>the study programs and review by local regulatory authorities, and varies from
+                country to country. Clinical trial information is available at www.clinicaltrials.gov.
+              </div>
+              <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="2">
+      <!-- Section 2 -->
+
+      <div class="main-content">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="colouroncology mb-5"><b>Bintrafusp alfa*</b>
+              <br> (TGF-β trap/anti–PD-L1)</h2>
+          </div>
+          <div class="col-12">
+            <div class="d-flex flex-row f-14">
+              <p class="font-weight-bold "> Clinical trial program overview | </p>
+              &nbsp; List of bintrafusp alfa trials sponsored by the NCI or MD Anderson Cancer Center
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead class="btn-immuno text-white">
+                  <tr>
+                    <th class="ImageColumn">Enrolling</th>
+                    <th>Clinical Trial</th>
+                    <th>Line </th>
+                    <th>Phase</th>
+                    <th>Bintrafusp Alfa Treatment</th>
+                    <th>ClinicalTrials.gov Identifier</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-white">
+                    <td></td>
+                    <td class="font-weight-bold text-black" colspan="5">HPV associated</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>HPV+ cancers</td>
+                    <td>2L+</td>
+                    <td>Phase II</td>
+                    <td>Monotherapy</td>
+                    <td>NCT03427411</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>Recurrent respiratory papillomatosis</td>
+                    <td>1L+</td>
+                    <td>Phase II</td>
+                    <td>Monotherapy</td>
+                    <td>NCT03707587</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td></td>
+                    <td class="font-weight-bold text-black" colspan="5">Breast cancer</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>RACHEL1:</b> HR+/HER2− BC</td>
+                    <td>2L+</td>
+                    <td>Phase I</td>
+                    <td>Combination with radiation</td>
+                    <td>NCT03524170</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>TNBC </td>
+                    <td>3L+</td>
+                    <td>Phase I</td>
+                    <td>Combination with eribulin </td>
+                    <td>NCT03579472</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>Stage II/III HER2+ BC</td>
+                    <td>NeoAdj</td>
+                    <td>Phase I</td>
+                    <td>Monotherapy</td>
+                    <td>NCT03620201</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td></td>
+                    <td class="font-weight-bold text-black" colspan="5">Prostate cancer</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>Biochemically recurrent prostate cancer</td>
+                    <td>2L+</td>
+                    <td>Phase II</td>
+                    <td>Combination with PROSTVAC + CV301</td>
+                    <td>NCT03315871</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td><b>QuEST1:</b> includes mCRPC cohort</td>
+                    <td>1L+</td>
+                    <td>Phase I/II</td>
+                    <td>Various combinations with epacadostat + <br> ALT-803 + BN-Brachyury vaccine</td>
+                    <td>NCT03493945</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td></td>
+                    <td class="font-weight-bold text-black" colspan="5">Other</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>MSI-H solid tumors, MSI-H mCRC, and CMS4,<br> mCRC
+                    </td>
+                    <td>2L+</td>
+                    <td>Phase I/II</td>
+                    <td>Monotherapy</td>
+                    <td>NCT03436563</td>
+                  </tr>
+                  <tr class="bg-white">
+                    <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                    <td>Pancreatic cancer </td>
+                    <td>2L</td>
+                    <td>Phase I/II</td>
+                    <td>Combination with gemcitabine</td>
+                    <td>NCT03451773</td>
+                  </tr>
+                  <tr class="bg-light">
+                    <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png" width="25" height="25">
+                    </td>
+                    <td>SCLC</td>
+                    <td>2L+</td>
+                    <td>Phase I/II</td>
+                    <td>Combination with topotecan or TMZ</td>
+                    <td>NCT03554473</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end">
+                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                  title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently recruiting
+                  &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25"
+                  title="Study closed for enrollment"> <span class="f-14"> &nbsp;&nbsp; Study closed for
+                  enrollment&nbsp;&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center mt-4 was-mb-4">
+              <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="row pt-5 pl-4">
+            <div class="col-12 needs-row-parent-pt-5-pl-4">
+              <div class="d-flex justify-content-between footer-disclaimers">
+                <div class="p-2 f-10 text-dark">
+                  <app-pipeline-compounds></app-pipeline-compounds>
+                </div>
+                <div class="p-2 f-10 text-dark d-flex align-items-end">GBPMLR/MULOP/0819/0016 September 2019</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </ng-container>
+
+  </ng-container>
 
 
 </div>

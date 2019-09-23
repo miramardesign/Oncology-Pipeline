@@ -23,7 +23,7 @@
                             <small class="f-12 text-dark">View More</small>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"
+                            <li #sectionLink [attr.data-metric-bucketname]="'button.FromHome.' + section.title + '.clicked'" class="list-group-item"
                              *ngFor="let section of item.sections">
                                 <div class="d-flex w-100 justify-content-between align-items-center">
                                     <div class="d-flex flex-column">
@@ -31,17 +31,17 @@
                                         <p class="card-text">{{section.subTitle}}</p>
                                     </div>
                                     <div class="List-icon">
-                                        <a [routerLink]="section.path" 
+                                        <a (click)="goToSectionRoute(section.path, sectionLink)"
                                         routerLinkActive="router-link-active"
                                          class="pt-2 col-md-2">
-                                         <img [src]="item.arrowImage" 
+                                         <img [src]="item.arrowImage"
                                          alt="image not found" width="50" height="50">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-row align-items-center mt-3">
                                     <p class="mr-3 mb-0 f-12">Development Phase</p>
-                                    <a *ngFor="let imageIndex of generateArray(section.phase)" 
+                                    <a *ngFor="let imageIndex of generateArray(section.phase)"
                                     style="cursor: default" href="#" class="card-link">
                                         <img [src]="getImageFromIndex(imageIndex)" height="18"></a>
 
@@ -53,11 +53,11 @@
             </div>
         </div>
     </div>
-   
+
     <div class="row pt-5 pl-4">
         <div class="col-12 needs-row-parent-pt-5-pl-4">
             <div class="d-flex justify-content-between footer-disclaimers">
-                <div class="p-2 f-10 text-dark"> 
+                <div class="p-2 f-10 text-dark">
                     Updated: August 5, 2019 <br />
                     <app-pipeline-compounds></app-pipeline-compounds>
                 </div>

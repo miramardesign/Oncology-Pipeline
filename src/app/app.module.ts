@@ -2,6 +2,8 @@ import { SliderComponent } from './components/slider/slider.component';
 import { TrialService } from './services/trial.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +34,7 @@ import { NavigationFooter } from './components/global/navigation-footer/navigati
 import { VideoControlComponent } from './components/shared/video-control/video-control.component';
 import { TitleHeaderHomeComponent } from './components/shared/title-header-home/title-header-home.component';
 import { PipelineCompoundsComponent } from './components/shared/pipeline-compounds/pipeline-compounds.component';
+import {MetricService} from './services/metric.service';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -67,11 +70,15 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     SwiperModule,
     ModalModule.forRoot(),
     UserIdleModule.forRoot({ idle: 0, timeout: 120, ping: 0 }),
   ],
-  providers: [TrialService],
+  providers: [
+    TrialService,
+    MetricService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

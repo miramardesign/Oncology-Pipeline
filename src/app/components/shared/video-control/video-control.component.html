@@ -1,5 +1,5 @@
 <!-- removed controls attribute -->
-<video
+<video *ngIf="videoLink"
   (click)="toggleVideo($event)"
   (ended)="videoEnded()"
   #videoPlayer

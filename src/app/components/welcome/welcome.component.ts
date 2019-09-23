@@ -2,6 +2,8 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
 import { ZincCode, WelcomePageData, images, welComeImages } from '../../data/content.data';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
+import {MetricService} from '../../services/metric.service';
+
 
 @Component({
   selector: 'app-welcome',
@@ -12,7 +14,11 @@ export class WelcomeComponent implements OnInit {
   zincCodeNum = ZincCode;
   welcomePanels = WelcomePageData;
   modalRef: BsModalRef;
-  constructor(private modalService: BsModalService, private router: Router) {
+  constructor(
+    private modalService: BsModalService,
+    private router: Router,
+    private metricService: MetricService,
+    ) {
   }
 
   ngOnInit() {
@@ -37,6 +43,11 @@ export class WelcomeComponent implements OnInit {
   }
   getWelcomeImages(imageIndex) {
     return welComeImages[imageIndex]
+  }
+
+  goToSectionRoute(route: string, sectionRef) {
+    this.metricService.addCounterMetricByAttribute(sectionRef);
+    this.router.navigate([route]);
   }
 
 }

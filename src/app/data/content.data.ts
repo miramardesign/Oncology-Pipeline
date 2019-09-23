@@ -70,29 +70,17 @@ export const getVideoUrl = (): string =>
    { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).video;
 
 
-export const getSectionByLocation = (location: Location): any => {
-
-    const pathSplit = location.pathname.split('/');
-
-    const slug = pathSplit[pathSplit.length - 1];
-    const section = (WelcomePageData
-        .find(sec => (sec.sections)
-        .find(
-          ele => ele.path === slug, '') !== undefined) || {});
-        return section;
-    };
-
-/**
- * todo use this.
- * @param location location in core
- */
-export const getVideoUrl2 = (location: Location): string => {
-  return getSectionByLocation(location).video;
-};
-export const getButtonImageColor = (location: Location): string => {
-  return getSectionByLocation(location).color;
-};
-
 /** looks up page and gets color from it., this didnt work remote on a sub-url/not flexible */
 //export const getButtonImageColor = (path): string => (WelcomePageData.find(sec => (sec.sections).find(ele => ele.path == path.split('').reduce((prev, next) => { return prev + (next == "/" ? "" : next) }, "")) != undefined) || {}).color;
+export const getButtonImageColor = (location: Location): string => {
 
+const pathSplit = location.pathname.split('/');
+// console.log('location', location, 'pathsplit', pathSplit);
+
+const slug = pathSplit[pathSplit.length - 1];
+  //console.log('slug', slug);
+  return (WelcomePageData
+    .find(sec => (sec.sections)
+    .find(
+      ele => ele.path === slug, '') !== undefined) || {}).color;
+};

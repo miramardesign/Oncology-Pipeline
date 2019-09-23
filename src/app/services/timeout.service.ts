@@ -9,10 +9,18 @@ import { Router } from '@angular/router';
 export class TimeoutService {
   isTimedOutSubject = new BehaviorSubject<boolean>(true);
   isTimedOut = this.isTimedOutSubject.asObservable();
+
+  isVideoPlayingSubject = new BehaviorSubject<boolean>(false);
+  isVideoPlaying = this.isVideoPlayingSubject.asObservable();
+
   constructor(private userIdle: UserIdleService, private router: Router) {}
 
   updateTimeoutStatus(value: boolean): void {
     this.isTimedOutSubject.next(value);
+  }
+
+  updateVideoPlayStatus(value: boolean) {
+    this.isVideoPlayingSubject.next(value);
   }
 
   start() {
@@ -20,6 +28,7 @@ export class TimeoutService {
     this.userIdle.onTimerStart().subscribe(count => {
       this.updateTimeoutStatus(false);
     });
+
     this.userIdle.onTimeout().subscribe(() => {
       this.updateTimeoutStatus(true);
       this.router.navigate(['/']);

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { getVideoUrl } from 'src/app/data/content.data';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import {TimeoutService} from '../../../services/timeout.service';
 
 @Component({
   selector: 'app-video-control',
@@ -16,7 +17,9 @@ export class VideoControlComponent implements OnInit {
   modalRef: BsModalRef;
 
 
-  constructor() {
+  constructor(
+    private timeoutService: TimeoutService,
+  ) {
     this.videoLink = getVideoUrl();
    }
 
@@ -42,9 +45,11 @@ export class VideoControlComponent implements OnInit {
     const paused = this.videoPlayer.paused;
 
     if (paused) {
+      this.timeoutService.stopWatching();
       this.videoPlayer.play();
       this.isVisiblePlayPause = false;
     } else {
+      this.timeoutService.start();
       this.videoPlayer.pause();
       this.isVisiblePlayPause = true;
 
