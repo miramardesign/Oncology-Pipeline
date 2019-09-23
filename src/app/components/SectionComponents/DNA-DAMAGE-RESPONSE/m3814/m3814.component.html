@@ -8,7 +8,10 @@
                 <h2 class="merckFont colourddr">DNA DAMAGE RESPONSE (DDR)</h2>
             </div>
             <div class="positionhome pl-4">
-                <a [routerLink]="'/'" >  <img src="assets/buttons/home-btn.png" alt="Home" height="50" width="50"></a>
+                <a [routerLink]="'/'"> <img src="assets/buttons/home-btn.png"
+                        alt="Home"
+                        height="50"
+                        width="50"></a>
             </div>
         </div>
     </div>
@@ -65,43 +68,57 @@
 
                         <!-- <video controls class="shadow-lg"
                          [src]="videoLink" (ended)="videoEnded()" width="100%"></video> -->
-                         <app-video-control
-                          class="shadow-lg" [src]="videoLink" >
+                        <app-video-control class="shadow-lg"
+                            [src]="videoLink">
                         </app-video-control>
 
                     </div>
-                    <!-- Pagination -->
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+
+                </div>
+            </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <footer>
+                <div class="row pt-5 pl-4">
+                    <div class="col-12 needs-row-parent-pt-5-pl-4">
+                        <div class="d-flex justify-content-between footer-disclaimers">
+                            <div class="p-2 f-10 text-dark">
+                                <app-pipeline-compounds></app-pipeline-compounds>
+                                MOA = Mechanism of Action<br> *M6620 (VX-970),
+                                M4344 (VX-803), M3541, and M3814 are under clinical investigation and have not been
+                                proven to be
+                                safe and effective. There is no guarantee any product will be approved in the
+                                sought-after
+                                indications. The relevance of<br> these preclinical findings on the efficacy and safety
+                                in the
+                                clinical setting has not been established.
+                                <br> 1. Shapiro G, et al. Cancer Res 2016;76(14 Suppl):Abstract CT012 and oral
+                                presentation
+                                (AACR 2016). 2. Plummer E, et al. J Clin Oncol 2016;34(Suppl):Abstract 2513 and poster
+                                (ASCO
+                                2016).<br> 3. O’Carrigan B, et al. J Clin
+                                Oncol 2016;34(Suppl):Abstract 2504 and oral presentation (ASCO 2016). 4. Vertex. Press
+                                Release,
+                                11 January 2017 (Accessed 1 January 2019). 5. ClinicalTrials.gov NCT03225105 (Accessed
+                                18 June
+                                2019). 6.<br> van Bussel M, et al. J Clin
+                                Oncol 2017;35(Suppl):Abstract 2556 and poster (ASCO 2017).
+                            </div>
+                            <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                                September 2019</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row pt-5 pl-4">
-                <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        <app-pipeline-compounds></app-pipeline-compounds>
-                        MOA = Mechanism of Action<br> *M6620 (VX-970),
-                        M4344 (VX-803), M3541, and M3814 are under clinical investigation and have not been proven to be
-                        safe and effective. There is no guarantee any product will be approved in the sought-after
-                        indications. The relevance of<br> these preclinical findings on the efficacy and safety in the
-                        clinical setting has not been established.
-                        <br> 1. Shapiro G, et al. Cancer Res 2016;76(14 Suppl):Abstract CT012 and oral presentation
-                        (AACR 2016). 2. Plummer E, et al. J Clin Oncol 2016;34(Suppl):Abstract 2513 and poster (ASCO
-                        2016).<br> 3. O’Carrigan B, et al. J Clin
-                        Oncol 2016;34(Suppl):Abstract 2504 and oral presentation (ASCO 2016). 4. Vertex. Press Release,
-                        11 January 2017 (Accessed 1 January 2019). 5. ClinicalTrials.gov NCT03225105 (Accessed 18 June
-                        2019). 6.<br> van Bussel M, et al. J Clin
-                        Oncol 2017;35(Suppl):Abstract 2556 and poster (ASCO 2017).
-                    </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
-                        September 2019</div>
-                </div>
-            </div>
-            </div>
-
+            </footer>
         </ng-container>
         <ng-container *ngSwitchCase="1">
             <div class="main-content">
@@ -123,7 +140,8 @@
 
                             </ul>
                             <div class="pl-5">
-                                <img src="assets/content/DDRI/ddri-atm-atr-dna-graphic.png" width="400px">
+                                <img src="assets/content/DDRI/ddri-atm-atr-dna-graphic.png"
+                                    width="400px">
                             </div>
                         </div>
                         <p class="f-14">DNA-PK is thought to be induced by exposure to cancer therapeutics.<br> As an
@@ -146,17 +164,24 @@
 
 
                         <div class="d-flex justify-content-center">
-                            <img src="assets/content/DDRI/ddri-survival-graphic.png" width="400px">
+                            <img src="assets/content/DDRI/ddri-survival-graphic.png"
+                                width="400px">
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
                 <div class="col-12 needs-row-parent-pt-5-pl-4">
@@ -173,7 +198,8 @@
                             Smith J, et al. Adv Cancer Res 2010;108:73-112. 5. Cimprich KA, Cortez<br> D. Nat Rev
                             Mol Cell Biol 2008;9:616-27. 6. Freed-Pastor WA, Prives C. Genes Dev 2012;26:1268-86. 7.
                             Hall
-                            AB, et al. Oncotarget 2014;5:5674-85.</div>
+                            AB, et al. Oncotarget 2014;5:5674-85.
+                        </div>
                         <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
                             September 2019</div>
                     </div>
@@ -205,11 +231,13 @@
                                 <tbody>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Solid tumors</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Expansion cohort in TNBC, NSCLC, SCLC</td>
                                         <td>Various</td>
@@ -219,7 +247,8 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Dose escalation</td>
                                         <td>Any</td>
@@ -229,7 +258,8 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td>Rollover study for 2013-005100-34 </td>
                                         <td>Any</td>
@@ -240,7 +270,8 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Dose escalation (NCI-sponsored) </td>
                                         <td>Any</td>
@@ -251,7 +282,8 @@
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Dose escalation (NCI-sponsored) </td>
                                         <td>Any</td>
@@ -262,11 +294,13 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">HPV-negative SCCHN</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">HPV-negative SCCHN</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Dose escalation (NCI-sponsored) </td>
                                         <td>Any</td>
@@ -276,12 +310,14 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">NSCLC with brain metastases
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">NSCLC with brain metastases
                                         </td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Dose escalation (NCI-sponsored)</td>
                                         <td>Any</td>
@@ -293,35 +329,45 @@
                             </table>
 
                             <div class="d-flex justify-content-end">
-                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
                                     title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
                                     recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
-                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14">
                                     &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
             <!-- Footer -->
-           <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
-                        various diseases. Efficacy and safety of these compounds are still under investigation in
-                        various indications. Regulatory approval is dependent on the completion of <br>the study
-                        programs and review by local regulatory authorities, and varies from country to country.
-                        Clinical trial information is available at www.clinicaltrials.gov.
+            <div class="row pt-5 pl-4">
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                            various diseases. Efficacy and safety of these compounds are still under investigation in
+                            various indications. Regulatory approval is dependent on the completion of <br>the study
+                            programs and review by local regulatory authorities, and varies from country to country.
+                            Clinical trial information is available at www.clinicaltrials.gov.
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
                     </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
                 </div>
             </div>
-        </div>
         </ng-container>
 
         <ng-container *ngSwitchCase="3">
@@ -350,11 +396,13 @@
                                 <tbody>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Ovarian carcinoma</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Ovarian carcinoma</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Platinum-resistant (NCI-sponsored)</td>
                                         <td>2L+</td>
@@ -364,7 +412,8 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Platinum-sensitive (NCI-sponsored) </td>
                                         <td>2L</td>
@@ -374,7 +423,8 @@
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>Recurrent, PARPi resistant </td>
                                         <td>2L+ </td>
@@ -384,11 +434,13 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Urothelial carcinoma</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Urothelial carcinoma</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>UC (NCI-sponsored) </td>
                                         <td>1L</td>
@@ -398,11 +450,13 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Small-cell cancers</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Small-cell cancers</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td>SCLC, NSCLC, OC, cervical cancer, NET<br> (NCI-sponsored) </td>
                                         <td>2L+</td>
@@ -413,10 +467,12 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Prostate cancer</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Prostate cancer</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td>Metastatic castration-resistant prostate<br> cancer (NCI Sponsored) </td>
                                         <td>2L+</td>
@@ -429,35 +485,46 @@
                             </table>
 
                             <div class="d-flex justify-content-end">
-                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
                                     title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
                                     recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
-                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14">
                                     &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
-                        various diseases. Efficacy and safety of these compounds are still under investigation in
-                        various indications. Regulatory approval is dependent on the completion of <br>the study
-                        programs and review by local regulatory authorities, and varies from country to country.
-                        Clinical trial information is available at www.clinicaltrials.gov.
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                            various diseases. Efficacy and safety of these compounds are still under investigation in
+                            various indications. Regulatory approval is dependent on the completion of <br>the study
+                            programs and review by local regulatory authorities, and varies from country to country.
+                            Clinical trial information is available at www.clinicaltrials.gov.
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
                     </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
                 </div>
             </div>
-        </div>
         </ng-container>
         <ng-container *ngSwitchCase="4">
             <!-- Section 2 -->
@@ -484,11 +551,13 @@
                                 <tbody>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Gastric/GEJ adenocarcinoma
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Gastric/GEJ adenocarcinoma
                                         </td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td><i>TP53</i> mutant cancer (NCI-sponsored)</td>
                                         <td>2L+</td>
@@ -498,11 +567,13 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Esophageal cancer and solid
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Esophageal cancer and solid
                                             tumors</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td>Dose escalation </td>
                                         <td>Any </td>
@@ -512,10 +583,12 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Various cancers</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Various cancers</td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td>Leiomyosarcoma, osteosarcoma, or solid<br> tumors with specified mutations
                                         </td>
@@ -528,35 +601,47 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
                                     title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
                                     recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
-                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14">
                                     &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
+
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
-                        various diseases. Efficacy and safety of these compounds are still under investigation in
-                        various indications. Regulatory approval is dependent on the completion of <br>the study
-                        programs and review by local regulatory authorities, and varies from country to country.
-                        Clinical trial information is available at www.clinicaltrials.gov.
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">Pipeline compounds are being investigated for the treatment of
+                            various diseases. Efficacy and safety of these compounds are still under investigation in
+                            various indications. Regulatory approval is dependent on the completion of <br>the study
+                            programs and review by local regulatory authorities, and varies from country to country.
+                            Clinical trial information is available at www.clinicaltrials.gov.
+                        </div>
+                        <div class=" p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
                     </div>
-                    <div class=" p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
                 </div>
             </div>
-        </div>
         </ng-container>
         <ng-container *ngSwitchCase="5">
             <!-- Section 2 -->
@@ -584,11 +669,13 @@
                                 <tbody>
                                     <tr class="bg-light">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Solid tumors</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Solid tumors</td>
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td><b>M4344</b>, ATRi, dose escalation</td>
                                         <td>Any</td>
@@ -598,7 +685,8 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td><b>M3541</b>, ATMi, dose escalation (tumors <br> in thorax, abdomen, head
                                             and neck,<br> extremities)
@@ -610,10 +698,11 @@
                                         </td>
                                     </tr>
                                     <tr class="bg-white">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25"
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
                                                 height="25"></td>
                                         <td><b>M3814</b>, DNA-PKi, dose escalation<br>
-                                             (expansion cohort in CLL) </td>
+                                            (expansion cohort in CLL) </td>
                                         <td>Any/3L+ </td>
                                         <td>Phase I</td>
                                         <td>M3814</td>
@@ -622,7 +711,8 @@
                                     </tr>
                                     <tr class="bg-light">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td><b>M3814</b>, DNA-PKi, dose escalation<br> (expansion cohorts in NSCLC and
                                             SCCHN)</td>
@@ -634,7 +724,8 @@
                                     </tr>
                                     <tr class="bg-white">
                                         <td class="ImageColumn"><img src="assets/indicators/study-recruiting.png"
-                                                width="25" height="25">
+                                                width="25"
+                                                height="25">
                                         </td>
                                         <td><b>M3814</b>, DNA-PKi, dose escalation</td>
                                         <td>2L+ </td>
@@ -645,39 +736,54 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                <img src="assets/indicators/study-recruiting.png" width="25" height="25"
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
                                     title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
                                     recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
-                                    width="25" height="25" title="Study closed for enrollment"> <span class="f-14">
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14">
                                     &nbsp;&nbsp; Study closed for enrollment&nbsp;&nbsp;</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center mt-4">
-                            <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+            <nav>
+                <!-- Pagination -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-center mt-4">
+                        <navigation-footer [navigationPanes]="navigationHolder"></navigation-footer>
+                    </div>
+                </div>
+
+            </nav>
+
+
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                        Pipeline compounds are being investigated for the treatment of various diseases. Efficacy and
-                        safety of these compounds are still under investigation in various indications. Regulatory
-                        approval is dependent on the completion of <br>the study programs and review by local regulatory
-                        authorities, and varies from country to country. Clinical trial information is available at
-                        www.clinicaltrials.gov.
-                        <br><br> M3814 in SCLC (NCT03116971) was terminated because of low recruitment rate of patients
-                        and due
-                        to a change in focus of the study<br>
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">
+                            Pipeline compounds are being investigated for the treatment of various diseases. Efficacy
+                            and
+                            safety of these compounds are still under investigation in various indications. Regulatory
+                            approval is dependent on the completion of <br>the study programs and review by local
+                            regulatory
+                            authorities, and varies from country to country. Clinical trial information is available at
+                            www.clinicaltrials.gov.
+                            <br><br> M3814 in SCLC (NCT03116971) was terminated because of low recruitment rate of
+                            patients
+                            and due
+                            to a change in focus of the study<br>
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
                     </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
                 </div>
             </div>
-        </div>
         </ng-container>
     </ng-container>
 </div>
