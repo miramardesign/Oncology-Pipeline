@@ -173,6 +173,11 @@
     border:none!important;
     
 }
+
+.table.table-striped td{
+    vertical-align: middle;
+}
+
 .table td{
     font-size:14px!important;
 }
