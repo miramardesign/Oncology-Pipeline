@@ -242,10 +242,13 @@ table.table-striped > thead > tr th:nth-child(6),
 table.table-striped > thead > tr th:nth-child(5),
 table.table-striped > thead > tr th:nth-child(4),
 table.table-striped > thead > tr th:nth-child(3),
+table.table-striped > thead > tr th.center,
+
 table.table-striped > tbody > tr td:nth-child(6),
 table.table-striped > tbody > tr td:nth-child(5),
 table.table-striped > tbody > tr td:nth-child(4),
-table.table-striped > tbody > tr td:nth-child(3)
+table.table-striped > tbody > tr td:nth-child(3),
+table.table-striped > tbody > tr td.center
 {
      text-align: center;
 }
