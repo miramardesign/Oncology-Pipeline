@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "deploy": "ng build --prod --base-href \"https://miramardesign.github.io/Oncology-Pipeline/serono-pipeline/\"  && ngh", 
+    "deploy": "ng build --prod --base-href \"https://miramardesign.github.io/Oncology-Pipeline/serono-pipeline/\"  && ngh --dir dist/serono-pipeline", 
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "ng build --base-href ./ && electron .",
