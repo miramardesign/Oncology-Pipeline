@@ -1,18 +1,21 @@
 <div class="container-fluid background_merckDetail">
 
-        <div class="row justify-content-between p-5 ml-1">
-                <div>
-                    <h1 class="merckFont colouroncology">Merck</h1>
-                </div>
-                <div class="d-flex">
-                    <div class="positionhead pt-2 pr-4 border_home">
-                        <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS</h2>
-                    </div>
-                    <div class="positionhome pl-4">
-                        <a [routerLink]="'/'" >  <img src="assets/buttons/home-btn.png" alt="Home" height="50" width="50"></a>
-                    </div>
-                </div>
+    <div class="row justify-content-between p-5 ml-1">
+        <div>
+            <h1 class="merckFont colouroncology">Merck</h1>
+        </div>
+        <div class="d-flex">
+            <div class="positionhead pt-2 pr-4 border_home">
+                <h2 class="merckFont coloronco">ONCOGENIC PATHWAYS</h2>
             </div>
+            <div class="positionhome pl-4">
+                <a [routerLink]="'/'"> <img src="assets/buttons/home-btn.png"
+                        alt="Home"
+                        height="50"
+                        width="50"></a>
+            </div>
+        </div>
+    </div>
     <ng-container [ngSwitch]="navigationHolder.currentSection">
         <ng-container *ngSwitchCase="0">
             <div class="main-content">
@@ -24,18 +27,27 @@
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <p class="font-weight-bold f-16 pl-4">Proposed profile</p>
                         <ul class="small-li">
-                            <li>M7583* is an investigational, ATP-competitive, irreversible BTK inhibitor.<sup>1</sup> This <br>molecule is currently under clinical investigation and has not been proven to be safe <br>and effective<br></li>
-                            <li>BTK is a key component of BCR signaling that regulates B-cell proliferation and <br>survival<sup>2,3</sup><br>
+                            <li>M7583* is an investigational, ATP-competitive, irreversible BTK inhibitor.<sup>1</sup>
+                                This <br>molecule is currently under clinical investigation and has not been proven to
+                                be safe <br>and effective<br></li>
+                            <li>BTK is a key component of BCR signaling that regulates B-cell proliferation and
+                                <br>survival<sup>2,3</sup><br>
                             </li>
-                            <li>The BCR pathway is implicated in the pathogenesis of B-cell malignancies such as<br> diffuse large B-cell lymphoma (DLBCL), mantle cell lymphoma (MCL), B- cell chronic <br>lymphocytic leukemia (CLL), Waldenström macroglobulinemia (WM),
+                            <li>The BCR pathway is implicated in the pathogenesis of B-cell malignancies such as<br>
+                                diffuse large B-cell lymphoma (DLBCL), mantle cell lymphoma (MCL), B- cell chronic
+                                <br>lymphocytic leukemia (CLL), Waldenström macroglobulinemia (WM),
                                 and multiple<br> myeloma (MM)<sup>3,4</sup><br></li>
-                            <li>M7583 is currently being investigated as potential therapy for various B-cell malignancies<sup>3</sup>
+                            <li>M7583 is currently being investigated as potential therapy for various B-cell
+                                malignancies<sup>3</sup>
                             </li>
-                            <li>Development of and clinical/preclinical investigation of BTK inhibitors may provide <br>additional insight into treatment of patient groups who have not shown significant <br>response to other therapies<sup>3</sup></li>
+                            <li>Development of and clinical/preclinical investigation of BTK inhibitors may provide
+                                <br>additional insight into treatment of patient groups who have not shown significant
+                                <br>response to other therapies<sup>3</sup></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-                        <img src="assets/content/ONCO-PATHWAY/m7583-moa.png" width="500px">
+                        <img src="assets/content/ONCO-PATHWAY/m7583-moa.png"
+                            width="500px">
                     </div>
 
                     <!-- Pagination -->
@@ -47,12 +59,12 @@
                 </div>
             </div>
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
 
-                        <app-pipeline-compounds></app-pipeline-compounds>
-<!--
+                        <div class="d-flex justify-content-between footer-disclaimers">
+                                <div class="p-2 f-10 text-dark">
+                                    <app-pipeline-compounds></app-pipeline-compounds>
+                                         <!--
                         GLOBAL: Adjust order /formatting (not bolded)
                         spacing of footer should go:
                         Pipeline disclaimer (line break)
@@ -60,26 +72,34 @@
                         Asset disclaimer (line break)
                         Refs (line break) -->
 
+                            BCR, B-cell antigen receptor; BTK, Bruton tyrosine kinase;
+                            elf4E, Eukaryotic translation initiation factor 4E; GSK-3,
+                            glycogen synthase kinase 3; LYN, tyrosine-protein kinase Lyn;
+                            mTOR, mammalian target of rapamycin; <br />
+                            NF-kβ, nuclear factor kappa-light-chain-enhancer
+                            of activated B cells; p70S6K, ribosomal protein S6 kinase beta-1; PI3K,
+                            phosphatidylinositide 3-kinase; PKC, protein kinase C; PLCγ2,
+                            phospholipase Cγ2; SYK, spleen tyrosine kinase.<br><br>
+                            *M7583 is under clinical investigation and has
+                            not been proven to be safe and effective.
+                            There is no guarantee M7583 will be approved in the sought-after indications.
+                            The relevance of these preclinical findings on the efficacy and safety in the<br>
+                            clinical setting has not been
+                            established.
+                            <br><br>1. Herman SEM, et al. Blood 2011;117:6287-96. 2.
+                            Gaudio E, et al. Cancer Res 2017;77(13 Suppl):Abstract 4182 and poster (AACR 2017).
+                            3. Hendricks RW, et al. Nat Cancer Rev 2014;14:219-32.
+                            4. Woyach JA, et al.
+                            Blood 2012;120:1175-84.
+                                </div>
+                                <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                                    September 2019</div>
+                            </div>
 
-                        BCR, B-cell antigen receptor; BTK, Bruton tyrosine kinase;
-                         elf4E, Eukaryotic translation initiation factor 4E; GSK-3,
-                         glycogen synthase kinase 3; LYN, tyrosine-protein kinase Lyn;
-                          mTOR, mammalian target of rapamycin; NF-kβ, nuclear factor  kappa-light-chain-enhancer
-                        of activated B cells; p70S6K, ribosomal protein S6 kinase beta-1; PI3K,
-                         phosphatidylinositide 3-kinase; PKC, protein kinase C; PLCγ2,
-                          phospholipase Cγ2; SYK, spleen tyrosine kinase.<br><br>
-                          *M7583 is under clinical investigation and has
-                        not been proven to be safe and effective.
-                        There is no guarantee M7583 will be approved in the sought-after indications.
-                        The relevance of these preclinical findings on the efficacy and safety in the<br>
-                         clinical setting has not been
-                        established.
-                        <br><br>1. Herman SEM, et al. Blood 2011;117:6287-96. 2. Gaudio E, et al. Cancer Res 2017;77(13 Suppl):Abstract 4182 and poster (AACR 2017). 3. Hendricks RW, et al. Nat Cancer Rev 2014;14:219-32. 4. Woyach JA, et al. Blood 2012;120:1175-84.
-                    </div>
-                    <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
+
+                   
                 </div>
             </div>
-        </div>
         </ng-container>
         <ng-container *ngSwitchCase="1">
             <!-- Section 2 -->
@@ -109,10 +129,13 @@
                                 <tbody>
                                     <tr class="bg-white">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Hematologic malignancies</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Hematologic malignancies</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>B-cell malignancies</td>
                                         <td>2L+*</td>
                                         <td>Phase I/II</td>
@@ -121,10 +144,13 @@
                                     </tr>
                                     <tr class="bg-white">
                                         <td></td>
-                                        <td colspan="5" class="font-weight-bold text-black">Healthy volunteers</td>
+                                        <td colspan="5"
+                                            class="font-weight-bold text-black">Healthy volunteers</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png" width="25" height="25"></td>
+                                        <td class="ImageColumn"><img src="assets/indicators/study-closed.png"
+                                                width="25"
+                                                height="25"></td>
                                         <td>Bioavailability</td>
                                         <td>–</td>
                                         <td>Phase I</td>
@@ -134,8 +160,16 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                    <img src="assets/indicators/study-recruiting.png" width="25" height="25" title="Study currently recruiting">     <span class="f-14"> &nbsp;&nbsp;   Study currently recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png" width="25" height="25" title="Study closed for enrollment">          <span class="f-14">                       &nbsp;&nbsp;          Study closed for enrollment&nbsp;&nbsp;</span>
-                                </div>
+                                <img src="assets/indicators/study-recruiting.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study currently recruiting"> <span class="f-14"> &nbsp;&nbsp; Study currently
+                                    recruiting &nbsp;&nbsp; </span><img src="assets/indicators/study-closed.png"
+                                    width="25"
+                                    height="25"
+                                    title="Study closed for enrollment"> <span class="f-14"> &nbsp;&nbsp; Study closed
+                                    for enrollment&nbsp;&nbsp;</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -147,15 +181,16 @@
             </div>
             <!-- Footer -->
             <div class="row pt-5 pl-4">
-            <div class="col-12 needs-row-parent-pt-5-pl-4">
-                <div class="d-flex justify-content-between footer-disclaimers">
-                    <div class="p-2 f-10 text-dark">
-                      <app-pipeline-compounds></app-pipeline-compounds>
-                       *This study is ongoing, but not recruiting participants.
-                       </div>
-                    <div class="p-2 f-10 text-dark zinc-code">GBPMLR/MULOP/0819/0016 September 2019</div>
+                <div class="col-12 needs-row-parent-pt-5-pl-4">
+                    <div class="d-flex justify-content-between footer-disclaimers">
+                        <div class="p-2 f-10 text-dark">
+                            <app-pipeline-compounds></app-pipeline-compounds>
+                            *This study is ongoing, but not recruiting participants.
+                        </div>
+                        <div class="p-2 f-10 text-dark d-flex align-items-end zinc-code">GBPMLR/MULOP/0819/0016
+                            September 2019</div>
+                    </div>
                 </div>
-            </div>
             </div>
         </ng-container>
     </ng-container>
